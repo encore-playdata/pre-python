@@ -10,3 +10,19 @@
 <출력>
 150
 """
+
+firNum = int(input("첫 번째 수를 입력하세요 : "))
+secNum = int(input("두 번째 수를 입력하세요 : "))
+oper = input("어떤 연산을 하실 건가요? : ")
+result = 0
+
+if(oper is "+"):
+    result = firNum + secNum
+elif(oper is "-"):
+    result = firNum - secNum
+elif(oper is "*"):
+    result = firNum * secNum
+elif(oper is "/"):
+    result = firNum / secNum
+
+print(result)
