@@ -12,3 +12,14 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+import re
+for i in range(1, 101):
+    numStr = str(i)
+    if(re.search('3|6|9', numStr) != None):
+        print('짝 ', end = '')
+    elif(i % 5 == 0):
+        print('아자 ', end = '')
+    else:
+        print('{} '.format(i), end = '')
+
+    #print(i)

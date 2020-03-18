@@ -3,6 +3,19 @@
 
 
 <출력>
-3  6  9  12  15  18  21  24  27  30  33  36  39  42  45  48  
+3  6  9  12  15  18  21  24  27  30  33  36  39  42  45  48
 
 """
+list = []
+for i in range(50):
+    if((i+1) % 3 == 0):
+        list.append(i+1)
+
+for i in range(len(list)):
+    print('{} '.format(list[i]), end = '')
+
+
+
+
+
+
