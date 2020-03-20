@@ -19,3 +19,15 @@ HELLO
 입력 형식이 잘못되었습니다.
 
 """
+# 알파벳 범위 설정 확인 다른 범위가 있는지 생각해보기
+
+word = input()
+def up_word(word):
+    return word.upper()
+
+if word == int or word == float:
+    print("입력 형식이 잘못되었습니다.")
+elif word >= 'a' and word <= 'z':
+    print(up_word(word))
+else:
+    print("입력 형식이 잘못되었습니다.")

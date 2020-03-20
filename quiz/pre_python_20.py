@@ -12,3 +12,14 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+
+for numbers in range(1, 101):
+    change_str = str(numbers)
+    change_list = list(change_str)
+    if numbers % 5 == 0:
+        numbers = "아자"
+    if "3" in change_list or "6" in change_list or "9" in change_list:
+        numbers = "짝"
+    print(numbers, end = " ")
+
+# 그런데 겹치는 부분 ex)30

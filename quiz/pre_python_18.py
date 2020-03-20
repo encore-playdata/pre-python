@@ -14,3 +14,9 @@ print(new_list)
 ['exit', 'hi', 'playdata', 'intro']
 
 """
+import os
+file = ['exit.py','hi.py','playdata.hwp','intro.jpg']
+for index,each in enumerate(file):
+    new = os.path.splitext(each)[0]
+    file[index] = new
+print(file)
