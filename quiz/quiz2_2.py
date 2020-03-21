@@ -11,3 +11,5 @@ def printDayOfTheWeek(year, month, day):
 
 
 print("%d년 %d월 %d일은 %s 입니다." % (myYear, myMonth, myDay, printDayOfTheWeek(myYear, myMonth, myDay)))
+
+#???

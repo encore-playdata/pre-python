@@ -13,3 +13,18 @@ print(is_palindrome("토마토"))
 False
 True
 '''
+
+def is_palindrome(str):
+    list1 = list(str)
+    before = list1.copy()
+    list1.reverse()
+    after = list1.copy()
+
+    if before == after:
+        return True
+    else:
+        return False
+
+print(is_palindrome("radio"))
+print(is_palindrome("토마토"))
+
