@@ -18,7 +18,7 @@ https://www.notion.so/playdatacademy/for-f74c2555d11d4da6b895ff949f5d5762
 
 
 # [5. 퀴즈 가져오기] <br/>
-###### encore-playdata의 repo를 내 계정으로 fork하고 이후 로컬환경으로 clone하기
+###### encore-playdata의 repository(=repo)를 내 계정으로 fork하고 이후 로컬환경으로 clone하기
 
 #### 1. encore-playdata 계정의 pre-education repo로 이동한 후 우측상단의 'Fork' 버튼을 클릭해주세요.
 ![fork_pre_education](images/fork_pre_education.png)
@@ -96,30 +96,31 @@ https://www.notion.so/playdatacademy/for-f74c2555d11d4da6b895ff949f5d5762
 ![open_quiz](images/open_quiz.png)
 
 #### 3. 다시 Git Bash로 가보겠습니다. pre-education 폴더 위치에서 "git status"를 입력합니다. 수정된 내용이 있으면 빨간 네모박스처럼 표기됩니다.
-![git_status](images/git_status.png)
 - git status 명령어는 로컬저장소의 상태를 확인할 수 있습니다.
+<br/>
+
+![git_status](images/git_status.png)
 <br/>
 
 #### 4. 자, 그럼 위에서 이야기한대로 add -> commit -> push 순으로 내 github에 작성한 퀴즈 답안을 업로드 해보겠습니다.
 
-- 첫번째, 먼저 내가 수정한 파일을 add 합니다.
-git add 파일명 또는 git add * 를 입력합니다. '*'는 수정한 파일 전체를 한 번에 add 할 수 있습니다.
+- 첫번째, 내가 수정한 파일을 add 하겠습니다. git add 파일명 또는 git add * 를 입력합니다. 
+     <blockquote> * 는 수정한 파일 전체를 한 번에 add 할 수 있습니다. </blockquote>
+<br/>
 
 - 두번째, 다시 한 번 git status로 로컬저장소의 상태를 확인해봅니다.
 ![git_add](images/git_add.png)
 <br/>
 
-- 세번째, 다음은 modified된 파일을 commit하여 local repository에 기록하겠습니다.
-git commit -m "answer_quiz_01" commit 메세지는 왼쪽처럼 "answer_quiz_퀴즈번호"로 기재해줍니다.
-![cap8](images/cap8.PNG)
+- 세번째, 다음은 modified된 파일을 commit하여 local repository에 기록하겠습니다. 그 다음은 내 온라인 github에 push 합니다.
+     <blockquote> git commit -m "Answer quiz 01" </blockquote>
+     <blockquote> commit 메세지의 convention은 슬랙 study 채널을 참고해주세요 </blockquote>
+     <blockquote> git push origin master </blockquote>
+
+![git_commit](images/git_commit.png)
 <br/>
 
-- 네번째, 여기까지 잘 오셨다면, 이제 내 온라인 github에 push 합니다.
-git push origin master
-![push](images/push.PNG)
-<br/>
-
-- 다섯번째, 내 GitHub로 가서 repository에 업데이트 된 내역을 확인해보세요.
+- 네번째, 내 GitHub로 가서 repository에 업데이트 된 내역을 확인해보세요!
 
 <br/>
 <br/>
