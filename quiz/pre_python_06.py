@@ -27,3 +27,11 @@
 
 
 """
+
+n = int(input('숫자를 입력하세요 : '))
+
+for star in range(1, 2 * n):
+    if star <= n:
+        print(' ' * (n - star) + star * '★')
+    else:
+        print(' ' * (star - n) + ((2 * n) - star) * '★')

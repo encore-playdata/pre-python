@@ -9,3 +9,11 @@ print(factorial(5))
 <출력>
 120
   """
+
+def factopral(n):
+    value = 1
+    for fact in range(1, n + 1):
+        value = value * fact
+    return value
+
+print(factopral(5))

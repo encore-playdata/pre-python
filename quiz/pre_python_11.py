@@ -7,3 +7,8 @@ print(gcd(12,6))
 <출력>
 6
 """
+def gcd(a, b):
+    for a1 in range(1, a + 1):
+        if
+
+# 다시 검토
