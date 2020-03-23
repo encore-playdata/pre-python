@@ -17,3 +17,35 @@ print(greedy())
 동전의 종류 :  100 50 10
 100원 동전 10개, 50원 동전 1개, 10원 동전 0개
 '''
+
+
+def greedy(cost):
+    ori_cost = cost
+    coins = [100, 50, 10]
+    coin_nums = []
+    for i in coins:
+        coin_nums.append(cost // i)
+        cost %= i
+
+    # return message
+    ret_message = ''
+    ret_message += '액수입력 : ' + str(ori_cost) + '\n'
+
+    ret_message += '동전의 종류 : '
+    for i in coins:
+        ret_message += '{} '.format(i)
+    ret_message += '\n'
+
+    ret_message_2 = ''
+    for i in range(0, len(coins)):
+        if i == len(coins) - 1:
+            ret_message_2 += '{}원 동전 {}개'.format(coins[i], coin_nums[i])
+            break
+        ret_message_2 += '{}원 동전 {}개, '.format(coins[i], coin_nums[i])
+
+    ret_message += ret_message_2
+
+    return ret_message
+
+
+print(greedy(1050))

@@ -6,3 +6,9 @@
 3  6  9  12  15  18  21  24  27  30  33  36  39  42  45  48  
 
 """
+
+num = 3
+while num <= 50:
+    print(num, end='  ')
+    num += 3
+print()

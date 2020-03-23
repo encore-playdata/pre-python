@@ -14,3 +14,23 @@ print(select_sort(list))
 [1, 2, 3, 6, 7, 8, 10, 21]
 
 '''
+
+
+def select_sort(lst):
+    idx = 0
+    while idx < len(lst):
+        min_val = 1e9
+        min_val_idx = idx
+        # find minimum value
+        for i in range(idx, len(lst)):
+            if min_val > lst[i]:
+                min_val = lst[i]
+                min_val_idx = i
+        # swap
+        lst[idx], lst[min_val_idx] = lst[min_val_idx], lst[idx]
+        idx += 1
+    return lst
+
+
+lst = [6, 2, 3, 7, 8, 10, 21, 1]
+print(select_sort(lst))

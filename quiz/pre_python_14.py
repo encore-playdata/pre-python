@@ -19,3 +19,20 @@ HELLO
 입력 형식이 잘못되었습니다.
 
 """
+import re
+
+string = list(input())
+lower_ = re.compile(r'[a-z]')
+upper_ = re.compile(r'[A-Z]')
+res = ''
+for i in string:
+    if lower_.match(i):
+        res += i.upper()
+        continue
+    elif upper_.match(i):
+        res += i.lower()
+    else:
+        print('입력 형식이 잘못되었습니다.')
+        exit()
+
+print(res)

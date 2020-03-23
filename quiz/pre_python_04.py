@@ -9,3 +9,14 @@ print(Triangle(10,20))
 100
 
 """
+
+
+def Triangle(breadth, height):
+    ret = breadth * height / 2
+    if ret % 10 > 0.0:
+        return ret
+    else:
+        return int(ret)
+
+
+print(Triangle(10, 20))

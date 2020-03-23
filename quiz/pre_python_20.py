@@ -12,3 +12,21 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+
+cur = 1
+while cur <= 100:
+    is_num = True
+
+    for i in str(cur):
+        if i == '3' or i == '6' or i == '9':
+            print('짝 ', end='')
+            is_num = False
+            break
+
+    if is_num:
+        if cur % 5 == 0:
+            print('아자  ', end='')
+            cur += 1
+            continue
+        print(cur, end='  ')
+    cur += 1

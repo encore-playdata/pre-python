@@ -15,3 +15,18 @@ score : 88
 A
 
 """
+
+print('score : ', end='')
+sc = int(input())
+if 0 <= sc <= 20:
+    print('F')
+elif 21 <= sc <= 40:
+    print('D')
+elif 41 <= sc <= 60:
+    print('c')
+elif 61 <= sc <= 80:
+    print('B')
+elif 81 <= sc <= 100:
+    print('A')
+else:
+    print('범위 초과')

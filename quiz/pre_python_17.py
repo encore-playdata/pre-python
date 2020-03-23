@@ -23,3 +23,8 @@
 2056
 2060
 """
+
+year = 1988
+while year <= 2060:
+    print(year)
+    year += 4
