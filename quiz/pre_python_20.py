@@ -12,3 +12,11 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+
+for i in range(1,101):
+    if i % 15 == 0 or i % 5 == 0:
+        print(" 아자 ",end="")
+    elif i % 3 == 0 :
+        print(" 짝 ",end="")
+    else:
+        print(" {} ".format(i),end="")

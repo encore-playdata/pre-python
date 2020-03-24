@@ -19,3 +19,16 @@ HELLO
 입력 형식이 잘못되었습니다.
 
 """
+import re
+
+str = input()
+
+str = re.sub('[^a-zA-Z]', '', str)
+
+if str.isalpha()  == True:
+    if str.isupper() == True:
+        print(str.lower())
+    elif str.isupper() == False:
+        print(str.upper())
+else:
+    print("입력 형식이 잘못되었습니다.")

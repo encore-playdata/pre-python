@@ -8,3 +8,13 @@
 <출력>
 남자
 """
+
+str = input("주민등록번호 : ")
+
+strlist = str.split('-')
+ans = strlist[1]
+
+if ans[0] == '1' or ans[0] == '3':
+    print("남자")
+else:
+    print("여자")
