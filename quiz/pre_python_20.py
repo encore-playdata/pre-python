@@ -12,3 +12,22 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+list= ""
+for i in range(1, 101):
+
+    number = str(i)
+    x = number.find("3")
+    y = number.find("6")
+    z = number.find("9")
+    if x != -1:
+        list += "짝 "
+    elif y != -1:
+        list += "짝 "
+    elif z != -1:
+        list += "짝 "
+    elif i % 5 == 0:
+        list += "아자 "
+    else:
+        list += number + " "
+
+print(list)

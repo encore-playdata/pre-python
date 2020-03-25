@@ -19,3 +19,19 @@ HELLO
 입력 형식이 잘못되었습니다.
 
 """
+
+import re
+
+n = input("문자를 입력하세요.")
+
+result = n.isupper()
+
+alpha = len(re.findall(u'[\u3130-\u318F\uAC00-\uD7A3]+', n))
+
+if alpha == 0:
+    if result:
+        print(n.lower())
+    else:
+        print(n.upper())
+else:
+    print('입력 형식이 잘못되었습니다.')

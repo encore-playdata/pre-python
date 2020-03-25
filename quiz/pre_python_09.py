@@ -15,3 +15,18 @@ score : 88
 A
 
 """
+
+score = int(input("점수를 입력하세요 : "))
+
+if score >= 81:
+    print('A')
+elif score >= 61:
+    print('B')
+elif score >= 41:
+    print('C')
+elif score >= 21:
+    print('D')
+elif score <= 20:
+    print('F')
+elif score > 100:
+    print('학점을 정확히 입력해주세요. ')

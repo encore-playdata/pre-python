@@ -23,3 +23,11 @@
 2056
 2060
 """
+
+year = 1988
+for i in range(1988, 2061):
+    if year == i:
+        print(i)
+        year = year + 4
+
+

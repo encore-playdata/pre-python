@@ -7,3 +7,14 @@
 <출력>
 짝수입니다.
 """
+
+number = int(input('정수를 입력하세요 : '))
+
+r = number % 2
+
+if r == 0:
+    print('짝수입니다.')
+elif r > 0:
+    print('홀수입니다.')
+else:
+    print('오류입니다.')
