@@ -13,3 +13,12 @@ print(is_palindrome("토마토"))
 False
 True
 '''
+palindrome = input("문자열을 입력해주세요 > ")
+def is_palindrome(x):
+    x = list(palindrome)
+    if x[0] == x[len(x)-1]:
+        return  True
+    else:
+        return False
+
+print(is_palindrome(palindrome))
