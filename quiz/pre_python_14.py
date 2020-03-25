@@ -19,3 +19,13 @@ HELLO
 입력 형식이 잘못되었습니다.
 
 """
+
+x =str(input(""))
+
+if str(len(x[0].encode())) < "3" :
+    if x == x.upper() :
+        print(x.lower())
+    elif x == x.lower() :
+        print(x.upper())
+else :
+    print("입력 형식이 잘못되었습니다.")

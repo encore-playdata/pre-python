@@ -27,3 +27,9 @@
 
 
 """
+x=int(input("숫자를 입력하세요 : "))
+
+for i in range(1,x+1):
+    print("{0:>5}".format(i*"★"))
+for i in range(x-1,0,-1):
+    print("{0:>5}".format(i*"★"))
