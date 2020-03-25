@@ -13,3 +13,16 @@ print(is_palindrome("토마토"))
 False
 True
 '''
+
+def is_palindrome(str):
+    strList = str
+    ans = True
+    for i in range(len(strList)//2):
+        if strList[i] == strList[-i-1]:
+            ans = True
+        else:
+            ans = False
+    return ans
+
+print(is_palindrome("radio"))
+print(is_palindrome("토마토"))
