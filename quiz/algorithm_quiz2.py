@@ -14,3 +14,45 @@ print(select_sort(list))
 [1, 2, 3, 6, 7, 8, 10, 21]
 
 '''
+
+list=[6,2,3,7,8,10,21,1]
+
+'''#이건 너무 불필요하게 어렵게 생각한 것. 반복문의 인자를 원소의 인덱스라 아니라 원소 그 자체로 하려고 했다. 
+def select_sort(list):
+    for i in list:
+        for j in range(list.index(list[i+1]), len(list)):
+            if list[j] > 
+'''
+
+
+'''
+#원소의 인덱스를 활용하는 방법을 썼다. 
+#여기에서 더 줄일 수 있다. 처음 반복문에서 리스트 끝항목까지 갈 필요는 없음. 
+#스왑과정에서 min변수를 쓰지 않는데 불필요하게 min을 선언해서 활용.
+ 
+def select_sort(list):
+    for i in range(0, len(list)):
+        min = list[i]
+        minIndex = i
+        for j in range(i+1, len(list)):
+            if min > list[j]:
+                min = list[j]
+                minIndex = j
+        list[i], list[minIndex] = list[minIndex], list[i]
+    return list
+'''
+
+
+def select_sort(list):
+    # 여기에 써야 len함수를 한번만 쓸 수 있다. 그리고 첫번째 반복문을 len(list)-1번만 반복함.
+    length = len(list)
+    for i in range(0, length-1):
+        minIndex = i
+        for j in range(i+1, length):
+            if list[minIndex] > list[j]:
+                # 최소인덱스를 갱신하고 최소인덱스를 활용하는 방법.
+                minIndex = j
+        list[i], list[minIndex] = list[minIndex], list[i]
+    return list
+
+print(select_sort(list))
