@@ -12,3 +12,19 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+
+# Step 1. 입력받은 숫자에 3, 6, 9가 들어가는지 확인하는 함수 만들기
+def check369(c):
+    num = str(c)
+    if "3" in num or "6" in num or "9" in num:
+        return True
+    return False
+
+# Step 2. 1부터 100까지 369 게임 진행
+for i in range(1, 101):
+    if check369(i) == True:
+        print("짝", end = " ")
+    elif i % 5 == 0:
+        print("아자", end = " ")
+    else:
+        print(i, end = " ")
