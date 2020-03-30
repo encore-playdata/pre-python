@@ -9,8 +9,23 @@ list=[6,2,3,7,8,10,21,1]
 
 <입력>
 print(select_sort(list))
-
 <출력>
 [1, 2, 3, 6, 7, 8, 10, 21]
-
 '''
+list=[6,2,3,7,8,10,21,1]
+
+def select_sort(list):
+    for i in range(len(list)):
+        min = i
+        for j in range(i, len(list)):
+            if list[j] < list[min]:
+                min = j
+        swap(list, min, i)
+    print(list)
+
+def swap(list, x, y):
+    temp = list[x]
+    list[x] = list[y]
+    list[y] = temp
+
+select_sort(list)

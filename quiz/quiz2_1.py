@@ -8,8 +8,18 @@
 <입력>
 print(is_palindrome("radio"))
 print(is_palindrome("토마토"))
-
 <출력>
 False
 True
 '''
+N = str(input())
+N_list = list(N)
+N_list_reverse = N_list[::-1]
+
+def is_palindrome():
+    if N_list_reverse == N_list:
+        return True
+    else:
+        return False
+
+print(is_palindrome())

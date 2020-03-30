@@ -23,3 +23,41 @@ multi_card.print()
 교통에서 1800.0원을 사용했습니다.
 잔액이 5700.0원 입니다
 '''
+class Card():
+    '''카드'''
+    def __init__(self, price, place):
+        self.price = price
+        self.place = place
+
+    def charge(self):
+        self.price += self.price
+        print("잔액이 {}원 입니다.".format(self.price))
+
+    def consume(self):
+        if self.place == '영화관':
+            self.price = self.price * 0.2
+        print("{}에서 {}원 사용했습니다.".format(self.place, self.price))
+
+    def print(self):
+        if self.price < self.price:
+            print("잔액이 부족합니다")
+        else:
+            print("잔액이 {}원 입니다.".format(self.price))
+
+card = Card(20000, '영화관')
+card.print()
+
+class Multi_card(Card):
+    '''카드'''
+    def consume(self):
+        if self.place == '마트' and self.price == '교통':
+            self.price = self.price * 0.1
+        print("{}에서 {}원 사용했습니다.".format(self.place, self.price))
+
+multi_card=Multi_card(30000, '마트')
+multi_card.print()
+#multi_card.charge(20000)
+#multi_card.consume(5000,'마트')
+#multi_card.consume(10000,'영화관')
+#multi_card.consume(2000,'교통')
+#multi_card.print()

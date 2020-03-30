@@ -1,5 +1,5 @@
-""""2.if문을 이용해 첫번째와 두번 수, 연산기호를 입력하게 하여 계산값이 나오는 계산기를 만드시오
-
+"""
+2.if문을 이용해 첫번째와 두번 수, 연산기호를 입력하게 하여 계산값이 나오는 계산기를 만드시오
 
 예시
 <입력>
@@ -10,3 +10,26 @@
 <출력>
 150
 """
+def sum(x,y):
+    return x + y
+def subtract(x,y):
+    return x - y
+def multiply(x,y):
+    return x * y
+def divide(x,y):
+    return x / y
+
+a = int(input("첫 번째 수를 입력하세요 : "))
+b = int(input("두 번째 수를 입력하세요 : "))
+c = str(input("어떤 연산을 하실 건가요? : "))
+
+if c == '+':
+    print(sum(a,b))
+elif c == '-':
+    print(subtract(a,b))
+elif c == '*':
+    print(multiply(a,b))
+elif c == '/' and b != 0:
+    print(divide(a,b))
+else:
+    print("0으로 나눌 수 없습니다.")

@@ -1,5 +1,6 @@
-"""15. 주민등록번호를 입력하면 남자인지 여자인지 알려주는 프로그램을 작성하시오. 
-(리스트 split 과 슬라이싱 활용) 
+"""
+15. 주민등록번호를 입력하면 남자인지 여자인지 알려주는 프로그램을 작성하시오.
+(리스트 split 과 슬라이싱 활용)
 
 예시
 <입력>
@@ -8,3 +9,12 @@
 <출력>
 남자
 """
+num = input("주민등록번호 : ")
+list_split = list(num)
+
+if '1' in list_split[7] or '3' in list_split[7]:
+    print("남자")
+elif '2' in list_split[7] or '4' in list_split[7]:
+    print("여자")
+else:
+    print("잘못된 주민등록번호입니다. 다시 입력해주세요.")
