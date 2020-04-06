@@ -9,3 +9,17 @@ print(factorial(5))
 <출력>
 120
   """
+
+def factorial(number):
+
+    number_list = list(range(number, 1, -1))
+
+    result = 1
+
+    for i in number_list:
+        result *= i
+
+    return result
+
+print(factorial(4))
+

@@ -10,3 +10,25 @@
 <출력>
 150
 """
+
+def calculator():
+    x = input("첫 번째 수를 입력하세요 : ")
+    y = input("두 번째 수를 입력하세요 : ")
+    z = input("어떤 연산을 하실 건가요? : ")
+
+    if z == '+':
+        result = int(x) + int(y)
+    elif z == '-':
+        result = int(x) - int(y)
+    elif z == '*':
+        result = int(x) * int(y)
+    else:
+        if int(y) == 0:
+            print(">>> 0으로 나눌 수 없습니다. <<<")
+            return
+        else:
+            result = int(x) / int(y)
+
+    print(result)
+
+calculator()

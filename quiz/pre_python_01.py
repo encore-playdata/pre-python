@@ -13,3 +13,13 @@
 ★★★★★
 ★★★★★
  """
+def make_rectangle():
+    a = input("가로의 숫자를 입력하시오 : ")
+    b = input("세로의 숫자를 입력하시오 : ")
+
+    i = 0
+    while i < int(b):
+        print('★' * int(a))
+        i += 1
+
+make_rectangle()

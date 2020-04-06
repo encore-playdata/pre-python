@@ -19,3 +19,34 @@ HELLO
 입력 형식이 잘못되었습니다.
 
 """
+
+def convert_alphabet_re():
+    str_input = input()
+
+    import re
+
+    alpha_pattern = re.compile('[A-Za-z]')
+    matched = re.match(alpha_pattern, str_input)
+
+    if not matched:
+        print("입력 형식이 잘못되었습니다.")
+    elif str_input.islower():
+        print(str_input.upper())
+    else:
+        print(str_input.lower())
+
+convert_alphabet_re()
+
+
+
+# def convert_alphabet1():
+#     str_input = input()
+#
+#     if not isalpha(str_input):
+#         print("입력 형식이 잘못되었습니다.")
+#     elif str_input.islower():
+#         print(str_input.upper())
+#     else:
+#         print(str_input.lower())
+
+# convert_alphabet1()

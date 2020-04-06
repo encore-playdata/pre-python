@@ -6,3 +6,17 @@
 3  6  9  12  15  18  21  24  27  30  33  36  39  42  45  48  
 
 """
+num_str = ''
+for i in range(1, 51):
+    if i % 3 == 0:
+        num_str += (str(i) + ' ')
+print(num_str)
+
+
+
+num_str1 = []
+for i in range(1,51):
+    if i % 3 == 0:
+        num_str1.append(str(i))
+
+print(' '.join(num_str1))

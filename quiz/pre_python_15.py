@@ -8,3 +8,13 @@
 <출력>
 남자
 """
+
+def gender_class():
+    id_num = input("주민등록번호 : ").split('-')
+
+    if id_num[1][0] in ['1', '3']:
+        print("남자")
+    else:
+        print("여자")
+
+gender_class()

@@ -5,3 +5,13 @@
 <출력>
  45
 """
+num_1_to_100 = 1
+sum_result = 0
+
+for number in range(1, 101):
+    sum_result += number
+    if sum_result < 1000:
+        num_1_to_100 += 1
+        continue
+    print(num_1_to_100)
+    break

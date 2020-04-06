@@ -7,3 +7,12 @@
 <출력>
 짝수입니다.
 """
+
+def is_odd_or_even():
+    input_int = int(input("정수를 입력하세요 : "))
+    if input_int % 2 == 0:
+        print("짝수입니다.")
+    else:
+        print("홀수입니다.")
+
+is_odd_or_even()
