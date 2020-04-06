@@ -17,3 +17,23 @@ print(greedy())
 동전의 종류 :  100 50 10
 100원 동전 10개, 50원 동전 1개, 10원 동전 0개
 '''
+def pickBest(coins,due):
+    if due == 0: return []
+    for c in coins:
+        if c <= due: return [c] + pickBest(coins, due - c)
+    # recursive fn
+    # 100 = 99 + 1
+    # 100 = 98 + 2 (2 = 1+1)
+    # 100 = 98 + (1+1)
+    # 100 = 97 + 3 (3 = 1+2)
+    # 100 = 97 + 2+1 (2 = 1+1)
+    # 100 = 1+1 +1
+    # ...
+
+amount = int(input("액수입력 : "))
+coin_type = str("동전의 종류 : 100 50 10")
+
+coins = [100, 50, 10]
+coins = sorted(coins, reverse=True)
+print(coin_type)
+print(pickBest(coins, amount))

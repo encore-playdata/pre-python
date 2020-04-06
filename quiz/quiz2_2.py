@@ -10,3 +10,20 @@ print("%d년 %d월 %d일은 %s 입니다." % (myYear, myMonth, myDay, printDayOf
 일을 입력하시오 : 13
 2020년 3월 13일은 금요일 입니다.
 '''
+import datetime
+
+myYear = int(input("연도를 입력하시오 : "))
+myMonth = int(input("월을 입력하시오 : "))
+myDay = int(input("일을 입력하시오 : "))
+
+start_time = datetime.datetime.now()
+start_time.replace(year = myYear, month = myMonth, day = myDay)
+
+days = {'Monday':'월요일','Tuesday':'화요일','Wednesday':'수요일','Thursday':'목요일','Friday':'금요일','Saturday':'토요일','Sunday':'일요일'}
+
+start_time.strftime("%A".format(start_time))
+d = {}
+for key in days.keys():
+    if start_time == key:
+        d[key] = days[key]
+print("{}년 {}월 {}일은 {} 입니다.".format(myYear, myMonth, myDay, days[key]))
