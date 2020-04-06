@@ -13,3 +13,12 @@
 ★★★★★
 ★★★★★
  """
+
+rowNum = int(input("가로의 숫자를 입력하시오 : "))
+colNum = int(input("세로의 숫자를 입력하시오 : "))
+
+
+for i in range(0, colNum):
+    for j in range(0, rowNum):
+        print("★", end="")
+    print("")

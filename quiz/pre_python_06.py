@@ -19,7 +19,7 @@
    ★★
   ★★★
  ★★★★
-★★★★★  
+★★★★★
  ★★★★
   ★★★
    ★★
@@ -27,3 +27,14 @@
 
 
 """
+maxNum = int(input("숫자를 입력하세요 : "))
+for i in range(1, (maxNum*2)):
+    for j in range(0, abs(maxNum - i)):
+        print(' ', end='')
+    if(i<=maxNum):
+        for k in range(i, 0, -1):
+            print('★', end='')
+    else:
+        for k in range(maxNum - abs(maxNum - i), 0, -1):
+            print('★', end='')
+    print('')

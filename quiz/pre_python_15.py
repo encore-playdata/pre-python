@@ -8,3 +8,12 @@
 <출력>
 남자
 """
+
+ssn = input("주민등록 번호 : ")
+list = ssn.split('-')
+back = list[1]
+gender = int(back[0:1])
+if gender % 2 == 0:
+    print("여자")
+else:
+    print("남자")

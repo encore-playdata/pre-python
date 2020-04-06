@@ -23,3 +23,16 @@
 2056
 2060
 """
+
+list = [1988, 2060]
+i = 1
+while True:
+    nextYear = 1988 + 4*i
+    if 1988 + 4*(i-1) < nextYear < list[-1]:
+        list.insert(-1, nextYear)
+    else:
+        break
+    i = i+1
+
+for i in list:
+    print(i)

@@ -5,3 +5,16 @@
 <출력>
  45
 """
+
+def check1000(maxNum):
+    total = 0
+    num = 0
+    for i in range(0, maxNum):
+        num = i + 1
+        total = total + num
+        if total > 1000:
+            break
+    return num
+
+result = check1000(100)
+print(result)
