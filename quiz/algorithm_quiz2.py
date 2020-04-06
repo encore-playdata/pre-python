@@ -14,3 +14,13 @@ print(select_sort(list))
 [1, 2, 3, 6, 7, 8, 10, 21]
 
 '''
+list = list(map(int, input('여러 개의 수를 입력해 주세요 :').split()))
+def select_sort(list):
+    for j in range(len(list)-1):
+        for i in range(1+j, len(list)):
+            if list[j] > list[i]:
+                list [j], list[i] = list[i], list[j]
+
+    return list
+print(select_sort(list))
+

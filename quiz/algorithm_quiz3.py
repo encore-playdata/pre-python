@@ -10,3 +10,15 @@ print(bubble_sort(list))
 
 <출력>
 [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 16, 21]'''
+
+list = list(map(int, input('여러 숫자를 입력해 주세요 :').split()))
+
+def bubble_sort(list):
+    for j in range(len(list)-1):
+        for i in range(len(list)-1):
+            if list[i] > list[i+1]:
+                list[i], list[i+1] = list[i+1], list[i]
+    return list
+print(bubble_sort(list))
+
+

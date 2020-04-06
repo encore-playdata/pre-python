@@ -19,3 +19,30 @@ HELLO
 입력 형식이 잘못되었습니다.
 
 """
+from string import ascii_lowercase
+from string import ascii_uppercase
+
+smallLetter = list(ascii_lowercase)
+bigLetter = list(ascii_uppercase)
+bothLetter = smallLetter+bigLetter
+str = input('영어 단어를 입력해 주세요 : ')
+
+def exchangeFunc(str):
+    newStr = []
+    try:
+        for i in range(len(str)):
+            if str[i] not in bothLetter:
+                raise ValueError
+            elif str[i] in smallLetter:
+                newStr.append(str[i].upper())
+            else:
+                newStr.append(str[i].lower())
+        for i in range(len(newStr)):
+            print(newStr[i], end="")
+    except ValueError:
+        print('입력 형식이 잘못되었습니다. ')
+        str = input('영어 단어를 입력해 주세요 :')
+        exchangeFunc(str)
+
+exchangeFunc(str)
+

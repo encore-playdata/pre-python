@@ -17,3 +17,43 @@ print(greedy())
 동전의 종류 :  100 50 10
 100원 동전 10개, 50원 동전 1개, 10원 동전 0개
 '''
+
+coin = list(map(int, input('동전의 종류를 입력해 주세요.:').split()))
+change = int(input('거스름 돈을 입력해주세요 :'))
+
+def greedy(change, coin):
+    coin.sort(reverse=True)
+    i = 0
+    solution = 0
+    result= {}
+    first_change = change
+    while change != 0:
+        if change > coin[i]:
+            change -=coin[i]
+            solution +=1
+        elif change == coin[i]:
+            change-=coin[i]
+            solution = 1
+            result[coin[i]] = solution
+        else:
+            result[coin[i]] = solution
+            i+=1
+            solution = 0
+
+    print('액수 입력 : {}'.format(first_change))
+    print('동전의 종류 : ', end = '')
+    print(",".join(map(str, coin)))
+    for i in range(len(coin)):
+        if i !=len(coin)-1:
+            if coin[i] in result:
+                print('{}원 동전 {}개, '.format(coin[i], result[coin[i]]), end = '')
+            else:
+                print('{}원 동전 0개, '.format(coin[i]), end = '')
+        else:
+            if coin[i] in result:
+                print('{}원 동전 {}개'.format(coin[i], result[coin[i]]))
+            else:
+                print('{}원 동전 0개'.format(coin[i]))
+    return''
+
+print(greedy(change, coin))

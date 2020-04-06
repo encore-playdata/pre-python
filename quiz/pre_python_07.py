@@ -5,3 +5,11 @@
 <출력>
  45
 """
+sum = 0
+for i in range(1,101):
+    sum += i
+    if sum > 1000:
+        print('합이 최초로 1000을 넘게 하는 수는 {}입니다.'.format(i))
+        break
+
+

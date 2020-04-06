@@ -13,3 +13,19 @@ print(is_palindrome("토마토"))
 False
 True
 '''
+def is_palidrome(a):
+    b=list(a)
+    i = 0
+    c = "True"
+    while i < len(b)//2:
+        if b[i] == b[len(b)-1-i]:
+            c = "True"
+            i+=1
+        else:
+            c="False"
+            break
+    return c
+
+a = input('단어를 입력하여 주세요:')
+
+print(is_palidrome(a))

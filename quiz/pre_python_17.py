@@ -23,3 +23,9 @@
 2056
 2060
 """
+list1 = list(range(1988, 2061))
+worldCup = list1[::4]
+for i in range(len(worldCup)):
+    print(worldCup[i])
+
+
