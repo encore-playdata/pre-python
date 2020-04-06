@@ -23,3 +23,8 @@
 2056
 2060
 """
+
+y = tuple(range(1988, 2061))
+for i in y:
+    if i % 4 == 0:
+        print(i)

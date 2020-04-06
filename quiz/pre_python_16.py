@@ -6,3 +6,11 @@
 3  6  9  12  15  18  21  24  27  30  33  36  39  42  45  48  
 
 """
+
+string = ""
+for i in range(50):
+    if (i + 1) % 3 == 0:
+        string += str(i + 1)
+    else:
+        string += " "
+print(string.strip())

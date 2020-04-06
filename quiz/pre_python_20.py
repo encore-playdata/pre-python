@@ -12,3 +12,13 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+
+for i in range(100):
+    if not str(i + 1).find("3") == -1 or not str(i + 1).find("6") == -1 or not str(i + 1).find("9") == -1:
+        print("짝", end=" ")
+    elif (i + 1) % 5 == 0:
+        print("아자", end=" ")
+    else:
+        print(i + 1, end=" ")
+    if i + 1 in (28, 58, 88):
+        print("")

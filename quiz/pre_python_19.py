@@ -10,3 +10,11 @@ print(list)
 ['charlie', 'foxtrot']
 
  """
+
+a = ['alpha', 'bravo', 'charlie', 'delta', 'echo', 'foxtrot', 'golf', 'hotel', 'india']
+list = []
+for i in a:
+    if len(i.replace(" ", "")) > 6:
+        list.append(i)
+
+print(list)

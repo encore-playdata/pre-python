@@ -10,3 +10,25 @@
 <출력>
 150
 """
+
+x = input("첫 번째 수를 입력하세요 : ")
+y = input("두 번째 수를 입력하세요 : ")
+o = input("어떤 연산을 하실 건가요? : ")
+r = None
+
+if o == "+":
+    r = int(x) + int(y)
+elif o == "-":
+    r = int(x) - int(y)
+elif o == "*":
+    r = int(x) * int(y)
+elif o == "/":
+    r = int(x) / int(y)
+elif o == "**":
+    r = int(x) ** int(y)
+elif o == "%":
+    r = int(x) % int(y)
+else:
+    r = int(x) // int(y)
+
+print("{}".format(r))

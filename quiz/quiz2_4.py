@@ -23,3 +23,39 @@ multi_card.print()
 교통에서 1800.0원을 사용했습니다.
 잔액이 5700.0원 입니다
 '''
+
+
+class SonCard:
+    capital = 0
+
+    def charge(self, money):
+        self.capital += money
+        print("잔액이 {}원 입니다.".format(self.capital))
+
+    def consume(self, money, shopType):
+        discount = 0
+        if shopType == "영화관":
+            discount = money * 0.2
+        elif shopType == "마트":
+            discount = money * 0.1
+        elif shopType == "교통":
+            discount = money * 0.1
+        pay = int(money - discount)
+        print("{}에서 {}원 사용했습니다".format(shopType, pay))
+        self.capital -= pay
+
+
+class Multi_card(SonCard):
+    def __init__(self):
+        print("카드가 발급 되었습니다.")
+
+    def print(self):
+        print("잔액이 {}원 입니다.".format(self.capital))
+
+
+multi_card = Multi_card()
+multi_card.charge(20000)
+multi_card.consume(5000, '마트')
+multi_card.consume(10000, '영화관')
+multi_card.consume(2000, '교통')
+multi_card.print()

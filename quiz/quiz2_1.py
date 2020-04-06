@@ -13,3 +13,18 @@ print(is_palindrome("토마토"))
 False
 True
 '''
+
+
+def is_palindrome(string):
+    result = ""
+    for char in string:
+        result = char + result
+
+    if string == result:
+        return True
+    else:
+        return False
+
+
+print(is_palindrome("radio"))
+print(is_palindrome("토마토"))

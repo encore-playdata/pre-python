@@ -5,3 +5,14 @@
 <출력>
  45
 """
+tot = 0
+check = True
+result = 0
+
+for i in range(1, 101):
+    tot += i
+    if check and tot >= 1000:
+        check = False
+        result = i
+
+print(result)

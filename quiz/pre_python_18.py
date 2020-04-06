@@ -14,3 +14,13 @@ print(new_list)
 ['exit', 'hi', 'playdata', 'intro']
 
 """
+
+
+def new_list(file):
+    for i, v in enumerate(file):
+        file[i] = v[0:v.find(".")]
+    return file
+
+
+file = ['exit.py', 'hi.py', 'playdata.hwp', 'intro.jpg']
+print(new_list(file))
