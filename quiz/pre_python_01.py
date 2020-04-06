@@ -13,3 +13,10 @@
 ★★★★★
 ★★★★★
  """
+print('<입력>')
+row = int(input('가로의 숫자를 입력하시오 : '))
+col = int(input('세로의 숫자를 입력하시오 : '))
+print()
+print('<출력>')
+for star in range(col):
+    print(row * '★ ')

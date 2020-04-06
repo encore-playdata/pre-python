@@ -27,3 +27,14 @@
 
 
 """
+print('<입력>')
+number = int(input('숫자를 입력하세요 : '))
+
+print()
+
+print('<출력>')
+for x in range(number) : 
+    print(' '*(number-x) + '★ '*(x+1))
+
+for y in range(number-1) : 
+    print(' '*(y+2) + '★ '*(number-1-y))

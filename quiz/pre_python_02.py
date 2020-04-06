@@ -10,3 +10,24 @@
 <출력>
 150
 """
+print('<입력>')
+one = int(input('첫 번째 수를 입력하세요 : '))
+two = int(input('두 번째 수를 입력하세요 : '))
+cal = input('어떤 연산을 하실 건가요? : ')
+print()
+
+print('<출력>')
+if(cal == '+') : 
+    print(one + two)
+if(cal == '-') : 
+    print(one - two)
+if(cal == '*') : 
+    print(one * two)
+if(cal == '/') : 
+    print(one / two)
+if(cal == '//') : 
+    print(one // two)
+if(cal == '%') : 
+    print(one % two)
+if(cal == '**') : 
+    print(one ** two)
