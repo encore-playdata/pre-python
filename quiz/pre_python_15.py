@@ -8,3 +8,9 @@
 <출력>
 남자
 """
+number = input('주민등록번호 : ')
+if int(number.split('-')[1][0]) % 2 == 0:
+    print('여자')
+else:
+    print('남자')
+

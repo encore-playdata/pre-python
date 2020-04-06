@@ -13,3 +13,13 @@ print(is_palindrome("토마토"))
 False
 True
 '''
+
+def is_palindrome(word):
+    reverse_word = list(word)
+    reverse_word.reverse()
+    if word == ''.join(reverse_word):
+        return True
+    return False
+
+print(is_palindrome("radio"))
+print(is_palindrome("토마토"))

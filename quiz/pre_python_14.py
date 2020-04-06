@@ -19,3 +19,10 @@ HELLO
 입력 형식이 잘못되었습니다.
 
 """
+string = input()
+if string.isupper():
+    print(string.lower())
+elif string.islower():
+    print(string.upper())
+else:
+    print("입력 형식이 잘못되었습니다.")

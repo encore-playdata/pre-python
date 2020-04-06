@@ -9,3 +9,10 @@ print(factorial(5))
 <출력>
 120
   """
+
+def factorial(number):
+    if number == 0 or number == 1:
+        return 1
+    return number * factorial(number - 1)
+
+print(factorial(5))
