@@ -16,6 +16,7 @@ A
 
 """
 
+# 내가 작성한 답안(더 쉽게 코딩할 수 있었는데..)
 score = int(input("score : "))
 if score >= 81 and score <= 100:
     print("A")
@@ -24,6 +25,19 @@ elif score >= 61 and score <= 80:
 elif score >= 41 and score <= 60:
     print("C")
 elif score >= 21 and score <= 40:
+    print("D")
+else:
+    print("F")
+
+# 실제 답안
+score = int(input("score : "))
+if score > 80:
+    print("A")
+elif score > 60:
+    print("B")
+elif score > 40:
+    print("C")
+elif score > 20:
     print("D")
 else:
     print("F")

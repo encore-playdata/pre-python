@@ -15,7 +15,17 @@ print(new_list)
 
 """
 
-file = ['exit.py', 'hi.py', 'playdata.hwp', 'intro.jpg']
+# 내가 작성한 답안
+file = ['exit.py','hi.py','playdata.hwp','intro.jpg']
 for i in range(4):
     new_list = file[i].split(".")
     print(new_list[0])
+
+# 실제 답안
+file = ['exit.py','hi.py','playdata.hwp','intro.jpg']
+new_list=[]
+for i in range(len(file)):
+    a = file[i].split(".") # 먼저 리스트 file를 "."을 기준으로 분할
+    new_list.append(a[0])  # 리스트 a는 "."을 기준으로 2개로 분할된 상태인데, 그 중에서 첫 번째 값을 append
+
+print(new_list)

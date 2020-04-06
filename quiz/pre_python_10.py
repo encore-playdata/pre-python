@@ -15,3 +15,5 @@ def factorial(n):
     for i in range(1, n+1):
         ret = ret * i
     return ret
+
+print(factorial(5))

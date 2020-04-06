@@ -13,6 +13,7 @@
 
 """
 
+# 내가 작성한 답안(함수 안 만들고 더 간단하게 할 수 있다..)
 # Step 1. 입력받은 숫자에 3, 6, 9가 들어가는지 확인하는 함수 만들기
 def check369(c):
     num = str(c)
@@ -28,3 +29,30 @@ for i in range(1, 101):
         print("아자", end = " ")
     else:
         print(i, end = " ")
+
+# 실제 답안
+# Sol 1)
+for i in range(1,101):
+    j=str(i)
+    if '3' in j:
+        print('짝',end=' ')
+    elif '6' in j:
+        print('짝',end=' ')
+    elif '9' in j:
+        print('짝',end=' ')
+    elif i%5==0:
+        print('아자',end='  ')
+    else:
+        print(j,end='  ')
+
+-----------------------------------
+
+# Sol 2)
+for i in range(1,101):
+    a = str(i)
+    if '3' in a or '6' in a or '9' in a:
+        print('짝',end=' ')
+    elif i%5==0:
+        print('아자', end=' ')
+    else:
+        print(a,end=' ')
