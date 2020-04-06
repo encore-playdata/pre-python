@@ -14,3 +14,18 @@ print(select_sort(list))
 [1, 2, 3, 6, 7, 8, 10, 21]
 
 '''
+# comprehension, for in 문 안에 연산 확인, 그리고 return 값에 대한 들여쓰기 중요한거 확인
+
+list = [6, 2, 3, 7, 8, 10, 21, 1]
+
+def select_sort(a):
+    for i in range(len(a)-1):
+        for j in range(i+1, len(a)):
+            if a[i] > a[j]:
+                a[i],a[j] = a[j],a[i]
+    return a
+print(select_sort(list))
+
+
+
+

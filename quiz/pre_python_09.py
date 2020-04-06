@@ -15,3 +15,16 @@ score : 88
 A
 
 """
+score = int(input("점수를 입력해주세요 : "))
+if 80 < score <= 100:
+    print("A")
+elif 60 < score <= 80:
+    print("B")
+elif 40 < score <= 60:
+    print("C")
+elif 20 < score <= 40:
+    print("D")
+else:
+    print("F")
+
+# 조금더 간단하게 표현 할 수 있을 것 같은데..

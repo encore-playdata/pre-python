@@ -10,3 +10,14 @@ print(bubble_sort(list))
 
 <출력>
 [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 16, 21]'''
+list1=[4,2,4,4,11,41,55,32]
+list=[4, 3, 2, 1, 8, 7, 5, 10, 11, 16, 21,6]
+# 선택정렬과 비슷한 매커니즘이지만 연산의 범위와 매개변수에 대해서 한번더 생각, 그리고 중복이여도 그냥 for in 문으로 전환
+def bubble_sort(x):
+    for i in range(1, len(x)):
+        for j in range(0, len(x)-1):
+            if x[j] > x[j+1]:
+                x[j+1],x[j] = x[j],x[j+1]
+    return x
+
+print(bubble_sort(list1))

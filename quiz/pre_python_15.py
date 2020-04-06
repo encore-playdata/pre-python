@@ -8,3 +8,13 @@
 <출력>
 남자
 """
+id = list(input("주민등록번호 : "))
+
+if int(id[7]) == 1 or int(id[7]) == 3:
+    print("남자")
+elif int(id[7]) == 2 or int(id[7]) == 4:
+    print("여자")
+else:
+    print("다시 입력해주세요. ")
+
+# 이거 맞나..?

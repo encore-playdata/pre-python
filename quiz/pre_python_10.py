@@ -9,3 +9,12 @@ print(factorial(5))
 <출력>
 120
   """
+
+import math
+
+def factorial(x):
+    return math.factorial(x)
+
+print(factorial(5))
+
+# 번거롭지만 모듈을 꺼내는게 아니라 귀찮더라도 다른 조건문과 반복문으로 구현할 수 없을까??

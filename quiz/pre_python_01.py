@@ -13,3 +13,15 @@
 ★★★★★
 ★★★★★
  """
+
+width = input("가로의 숫자를 입력하시오 : ")
+height = input("세로의 숫자를 입력하시오 : ")
+
+def function():
+    return "★" * int(width)
+
+i = 0
+while i < int(height):
+    print(function())
+    i = i + 1
+# 아 뭔가 비효율적인 것 같은데.. 나중에 다시해보기

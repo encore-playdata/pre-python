@@ -17,3 +17,13 @@ print(greedy())
 동전의 종류 :  100 50 10
 100원 동전 10개, 50원 동전 1개, 10원 동전 0개
 '''
+# 연산 순서에 따라서 값이 달라짐을 주의 할 것그리고 None은 왜 나오는 거지???
+def greedy():
+    money = int(input("액수입력 :  "))
+    coin_catagory = input("동전의 종류 : ").split(" ")
+
+    for coin_price in coin_catagory:
+        coin_number = int(money // int(coin_price))
+        print(f"{coin_price}원 동전 {coin_number}개", end=", ")
+        money = money - (int(coin_price) * int(coin_number)) # 이값이 1050 원이라면 - 1000원을 뺀 50원
+print(greedy())
