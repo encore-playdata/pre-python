@@ -8,3 +8,13 @@
 <출력>
 남자
 """
+print('<입력>')
+id = input('주민등록번호 :')
+
+print('<출력>')
+id_split = id.split('-')
+id_slice = int(id_split[1][0:1])
+if id_slice == 1 or id_slice == 3:
+    print("남자")
+elif id_slice == 2 or id_slice == 4:
+    print("여자")

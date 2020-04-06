@@ -9,3 +9,10 @@ print(Triangle(10,20))
 100
 
 """
+def Triangle(x,y):
+    Ca_Result = x*y/2
+    return Ca_Result
+
+x= int(input('삼각형의 가로를 입력하세요'))
+y =int(input('삼각형의 높이를 입력하세요'))
+print(Triangle(x,y))

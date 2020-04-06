@@ -10,3 +10,33 @@
 <출력>
 150
 """
+a,b,ch=0,0,""
+
+a=int(input("첫 번째 수를 입력하세요"))
+
+ch=input("연산자를 입력하세요")
+
+b=int(input("두 번째 수를 입력하세요"))
+
+
+
+if ch=="+":
+
+    print("%d+%d=%d" %(a, b, a+b))
+
+elif ch=="-":
+
+    print("%d-%d=%d" %(a,b,a-b))
+
+elif ch=="*":
+
+    print("%d*%d=%d" %(a,b,a*b))
+
+elif ch=="/":
+
+    print("%d/%d=%d" %(a,b,a/b))
+
+
+
+print("연산 완료")
+
