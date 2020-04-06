@@ -19,3 +19,17 @@ HELLO
 입력 형식이 잘못되었습니다.
 
 """
+
+word = input()
+
+if word.isascii() == False:
+    print("입력 형식이 잘못되었습니다.")
+
+elif word.upper() in word:
+    print(word.lower())
+
+elif word.lower() in word:
+    print(word.upper())
+
+
+

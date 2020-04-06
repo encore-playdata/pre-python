@@ -27,3 +27,25 @@
 
 
 """
+
+n = int(input("숫자를 입력하세요 : "))
+
+t = n
+for i in range(t):
+    for k in range(t - 1):
+        print(" ", end = "")
+
+    for k in range(i + 1):
+        print("★", end = "")
+    t -= 1
+    print("")
+
+t = n
+for i in range(t):
+    for k in range(i + 1):
+        print(" ", end = "")
+
+    for k in range(t - 1):
+        print("★", end="")
+    t -= 1
+    print("")
