@@ -14,3 +14,14 @@ print(planet)
 <출력>
 ['태양', '수성', '금성', '지구', '화성', '목성', '토성', '천왕성', '해왕성']
 """
+
+planet =['태양','수성','금성','화성','목성','토성','천왕성','해왕성']
+
+list1 = planet[0:3]
+list2 = planet[3:]
+
+list1.append('지구')
+
+planet = list1 + list2
+
+print(planet)

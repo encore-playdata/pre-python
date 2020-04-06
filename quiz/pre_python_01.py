@@ -13,3 +13,14 @@
 ★★★★★
 ★★★★★
  """
+
+columns = input("가로의 숫자를 입력하시오 : ")
+rows = input("세로의 숫자를 입력하시오 : ")
+
+int_columns = int(columns)
+int_rows = int(rows)
+
+for i in range(int_rows):
+    for j in range(int_columns):
+        print('★', end='')
+    print()

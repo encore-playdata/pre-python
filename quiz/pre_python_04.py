@@ -9,3 +9,8 @@ print(Triangle(10,20))
 100
 
 """
+def Triangle(base, height):
+    area = base * height / 2
+    return area
+
+print(Triangle(10, 20))
