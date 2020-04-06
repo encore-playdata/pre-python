@@ -10,3 +10,18 @@
 <출력>
 150
 """
+x = int(input("첫 번째 수를 입력하세요 : "))
+y = int(input("두 번째 수를 입력하세요 : "))
+z = input("어떤 연산을 하실 건가요? : ")
+result = 0
+
+if z=='+':
+    result = x + y
+elif z == '-':
+    result = x - y
+elif z == '*':
+    result = x * y
+else :
+    result = x//y
+
+print(result)

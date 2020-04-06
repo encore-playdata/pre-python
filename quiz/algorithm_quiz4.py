@@ -17,3 +17,32 @@ print(greedy())
 동전의 종류 :  100 50 10
 100원 동전 10개, 50원 동전 1개, 10원 동전 0개
 '''
+
+def greedy() :
+    amount = int(input("액수입력 : "))
+    coin = list(map(int,input("동전의 종류 : ").split()))
+    grouping = list()
+
+    while amount != 0:
+        if amount >= coin[0]:
+            grouping.append(amount//coin[0])
+            amount = amount%coin[0]
+        else : grouping.append(0)
+
+        if amount >= coin[1]:
+            grouping.append(amount//coin[1])
+            amount = amount%coin[1]
+        else: grouping.append(0)
+
+        if amount >= coin[2]:
+            grouping.append(amount//coin[2])
+            amount = amount%coin[2]
+        else: grouping.append(0)
+
+
+
+    print("{}원 동전 {}개, {}원 동전 {}개, {}원 동전 {}개".format(coin[0],grouping[0]
+                                                      ,coin[1],grouping[1]
+                                                      ,coin[-1],grouping[-1]))
+
+print(greedy())

@@ -5,3 +5,11 @@
 <출력>
  45
 """
+ans = 0
+
+for i in range(99):
+    ans = ans+i
+    if ans >= 1000:
+        print(i)
+        break
+

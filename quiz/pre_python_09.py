@@ -15,3 +15,16 @@ score : 88
 A
 
 """
+
+n = int(input("score : "))
+
+if n>=81 and n <=100:
+    print("A")
+elif n>=61 and n<=80:
+    print("B")
+elif n>=41 and n<=60:
+    print("C")
+elif n>=21 and n<=40:
+    print("D")
+else:
+    print("F")
