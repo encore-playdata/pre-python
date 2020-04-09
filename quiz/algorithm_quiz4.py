@@ -17,3 +17,19 @@ print(greedy())
 동전의 종류 :  100 50 10
 100원 동전 10개, 50원 동전 1개, 10원 동전 0개
 '''
+
+def greedy():
+    cost = int(input('액수입력 : '))
+    kind = input('동전의 종류 : ')
+    kind = list(map(int, kind.strip().split(' ')))
+
+    for volumn in kind:
+        count = cost // volumn
+        cost = cost - count * volumn
+
+        if kind[kind.index(volumn)] == kind[len(kind) - 1]:
+            print(f'{volumn}원 동전 {count}개')
+        else:
+            print(f'{volumn}원 동전 {count}개', end=', ')
+
+greedy()

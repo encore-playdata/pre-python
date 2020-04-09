@@ -9,3 +9,8 @@ print(Triangle(10,20))
 100
 
 """
+
+def volume(width, height):
+    print(width * height / 2)
+
+volume(10, 5)

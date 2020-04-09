@@ -10,3 +10,11 @@ print(list)
 ['charlie', 'foxtrot']
 
  """
+a = ['alpha', 'bravo', 'charlie', 'delta', 'echo', 'foxtrot', 'golf', 'hotel', 'india']
+tmp = []
+
+for word in a:
+    if len(word) == 7:
+        tmp.append(word)
+
+print(tmp)

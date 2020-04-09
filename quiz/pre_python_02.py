@@ -10,3 +10,15 @@
 <출력>
 150
 """
+num1 = int(input('첫 번째 수를 입력하세요 : '))
+num2 = int(input('첫 번째 수를 입력하세요 : '))
+sign = input('어떤 연산을 하실 건가요? : ')
+
+if sign == "+": print(num1 + num2)
+elif sign == "-": print(num1 - num2)
+elif sign == "/": print(num1 / num2)
+elif sign == "*": print(num1 * num2)
+elif sign == "//": print(num1 // num2)
+elif sign == "%": print(num1 % num2)
+elif sign == "**": print(num1 ** num2)
+else: print('잘못된 입력입니다')

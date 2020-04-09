@@ -12,3 +12,10 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+for n in range(1, 101):
+    if '3' in str(n) or '6' in str(n) or '9' in str(n):
+        print('짝', end=' ')
+    elif '5' in str(n) or '0' in str(n):
+        print('아자',end=' ')
+    else:
+        print(n, end=' ')

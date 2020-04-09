@@ -27,3 +27,17 @@
 
 
 """
+
+drawing_star = int(input('숫자를 입력하세요 :'))
+space = " "
+space_count = drawing_star
+
+for star_count in range(drawing_star):
+    star_count += 1
+    space_count -= 1
+    print(space * space_count + star_count * "★")
+
+for star_count in range(drawing_star, 0, -1):
+    star_count -= 1
+    space_count += 1
+    print(space * space_count + star_count * "★")

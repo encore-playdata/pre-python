@@ -13,3 +13,17 @@ print(is_palindrome("토마토"))
 False
 True
 '''
+def is_palindrome(word):
+    start = 0
+    end = len(word) - 1
+    for n in range(len(word) // 2):
+        if word[start] != word[end]:
+            return False
+            break
+        else:
+            start += 1
+            end -= 1
+    return True
+
+print(is_palindrome("radio"))
+print(is_palindrome("토마토"))

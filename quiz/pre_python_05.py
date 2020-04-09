@@ -16,3 +16,8 @@
 5 * 9 = 45
 
 """
+
+multiplication_table = int(input('출력할 단을 입력해주세요 : '))
+
+for n in range(1, 10):
+    print(f"{multiplication_table} * {n} = {multiplication_table * n}")
