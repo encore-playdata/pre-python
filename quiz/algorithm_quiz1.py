@@ -8,3 +8,4 @@ print(factorial(10))
 
 <출력>
 3628800'''
+print(factorial(10))
