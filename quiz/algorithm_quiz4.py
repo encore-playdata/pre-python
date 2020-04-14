@@ -22,12 +22,16 @@ def greedy():
     value = int(input("액수입력 : "))
     coin_list = list(map(int, input("동전의 종류 : ").split(" ")))
 
+    result = []
+
     count = 0  # 누적 동전 개수
     coin_list.sort(reverse=True)  # coin_list의 값들을 큰 순서대로 본다
 
     for i in coin_list:
         count += (value // i)  # 현재 동전으로 몇 개 거슬러 줄 수 있는지 확인
-        print("{}원 동전 {}개".format(i, value // i), end=", ")
+        result.append("{}원 동전 {}개".format(i, value // i))
         value -= (value // i) * i  # 잔액을 계산
+    answer = ", ".join(result)
+    return print(answer)
 
 greedy()
