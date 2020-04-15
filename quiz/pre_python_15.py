@@ -8,3 +8,19 @@
 <출력>
 남자
 """
+
+# 내가 작성한 답안
+id_1, id_2 = input("주민등록번호 : ").split("-")
+
+if id_2[0] == "1":
+    print("남자")
+else:
+    print("여자")
+
+# 실제 답안
+num = input("주민등록번호 : ").split("-")
+se = num[1] # "-"를 기준으로 split 했을 때, 뒷 부분을 의미
+if se[0] == "1" or se[0] == "3":
+    print("남자")
+elif se[0] == "2" or se[0] == "4":
+    print("여자")

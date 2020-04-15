@@ -27,3 +27,9 @@
 
 
 """
+# range(start, stop, step) 함수에서 stop 값은 포함하지 않으며, step 값에 음수를 넣을 수 있다
+n = int(input("숫자를 입력하세요 : "))
+for i in range(1, n+1):
+    print((n-i) * " ", i * "★")
+for j in range(n-1, 0, -1):
+    print((n-j) * " ", j * "★")
