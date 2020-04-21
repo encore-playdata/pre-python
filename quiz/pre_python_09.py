@@ -15,3 +15,17 @@ score : 88
 A
 
 """
+
+def eval_grade():
+    grade = int(input('score : '))
+
+    if grade > 80:
+        return print('A')
+    elif grade > 60:
+        return print('B')
+    elif grade > 40:
+        return print('C')
+    elif grade > 20:
+        return print('D')
+    else:
+        return print('F')

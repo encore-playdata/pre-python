@@ -10,3 +10,6 @@ print(list)
 ['charlie', 'foxtrot']
 
  """
+
+def find_len_7(words):
+    return [word for word in words if len(word) == 7]

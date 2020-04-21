@@ -6,3 +6,9 @@
 3  6  9  12  15  18  21  24  27  30  33  36  39  42  45  48  
 
 """
+def muliple_of_3():
+    result = ''
+    for num in range(1, 51):
+        if num % 3 == 0:
+            result += str(num) + ' '
+    return print(result[:-1])    # 마지막 공백 제거

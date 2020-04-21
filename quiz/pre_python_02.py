@@ -10,3 +10,19 @@
 <출력>
 150
 """
+def cal():
+    a = int(input('첫 번째 수를 입력하세요: '))
+    b = int(input('두 번째 수를 입력하세요: '))
+    sign = input('어떤 연산을 하실 건가요? ')
+
+    if sign == '+':
+        return a + b
+    elif sign == '-':
+        return a - b
+    elif sign == '*':
+        return a * b
+    elif sign == '-':
+        return a - b
+    else:
+        return print('잘못 입력했습니다.')
+cal()

@@ -23,3 +23,7 @@
 2056
 2060
 """
+def year_of_worldcup():
+    for year in range(1988, 2061, 4):
+        print(year)
+    return

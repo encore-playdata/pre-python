@@ -14,3 +14,6 @@ print(new_list)
 ['exit', 'hi', 'playdata', 'intro']
 
 """
+
+def remove_extension(files):
+    return [file[:file.find('.')] for file in files]

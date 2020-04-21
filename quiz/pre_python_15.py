@@ -8,3 +8,9 @@
 <출력>
 남자
 """
+
+def genderfromid():
+    id = input('주민등록번호 : ')
+    id_list = id.split('-')
+    identifier = int(id_list[1][0])
+    return '남자' if identifier % 2 == 1 else '여자'

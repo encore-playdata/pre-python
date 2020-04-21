@@ -12,3 +12,13 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+def game_369():
+    result = ''
+    for num in range(1, 101):
+        if str(num).find('3') != -1 or str(num).find('6') != -1 or str(num).find('9') != -1:
+            result += '짝 '
+        elif num % 5 == 0:
+            result += '아자 '
+        else:
+            result += str(num) + ' '
+    return print(result[:-1])

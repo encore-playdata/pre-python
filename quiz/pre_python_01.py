@@ -13,3 +13,13 @@
 ★★★★★
 ★★★★★
  """
+def print_star():
+    col = input('가로의 숫자를 입력하시오 : ')
+    row = input('세로의 숫자를 입력하시오 : ')
+
+
+    for r in range(int(row)):
+        result = ''
+        for c in range(int(col)):
+            result += '★'
+        print(result)

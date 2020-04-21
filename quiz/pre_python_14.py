@@ -19,3 +19,13 @@ HELLO
 입력 형식이 잘못되었습니다.
 
 """
+def upperlower(words):
+    import re
+    # 영문자 외 문자 입력 시 메시지 출력
+    if len(re.findall('[^a-z^A-Z]', words)) > 0:
+        return print('입력 형식이 잘못되었습니다.')
+
+    result = ''
+    for word in words:
+        result += (word.upper() if word.islower() else word.lower())    # 소문자 -> 대문자, 대문자 -> 소문자
+    return print(result)

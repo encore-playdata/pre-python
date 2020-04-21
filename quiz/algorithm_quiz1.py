@@ -7,4 +7,10 @@
 print(factorial(10))
 
 <출력>
-3628800'''
+3628800
+'''
+
+# n >= 0 인 정수라고 가정
+
+def factorial(n):
+    return n * factorial(n-1) if n > 1 else 1

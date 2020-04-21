@@ -27,3 +27,11 @@
 
 
 """
+def print_star():
+    n = int(input('숫자를 입력하세요 : '))
+
+    for num in range(1, n+1):
+        print('{:>{}}'.format('*'*num, n))
+    for num in range(n-1, 0, -1):
+        print('{:>{}}'.format('*'*num, n))
+    return

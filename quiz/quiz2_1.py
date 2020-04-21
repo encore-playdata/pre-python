@@ -13,3 +13,6 @@ print(is_palindrome("토마토"))
 False
 True
 '''
+
+def is_palindrome(test_word):
+    return (test_word == test_word[::-1])
