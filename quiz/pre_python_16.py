@@ -6,3 +6,6 @@
 3  6  9  12  15  18  21  24  27  30  33  36  39  42  45  48  
 
 """
+
+list = [ str(i * 3) for i in range (1, 51)]
+print (' '.join(list))

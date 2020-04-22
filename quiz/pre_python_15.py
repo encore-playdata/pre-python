@@ -8,3 +8,11 @@
 <출력>
 남자
 """
+
+inputNumber = input("주민등록번호 : ")
+idList=inputNumber.split('-')
+gender = int(idList[1][0])
+if gender % 2 == 0:
+    print ('여자')
+else:
+    print ('남자')

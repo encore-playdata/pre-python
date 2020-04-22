@@ -14,3 +14,13 @@ print(select_sort(list))
 [1, 2, 3, 6, 7, 8, 10, 21]
 
 '''
+list=[6,2,3,7,8,10,21,1]
+
+def select_sort(list):
+    new_list = []
+    for _ in range(len(list)):
+        new_list.append(list.pop(list.index(min(list))))    
+
+    return new_list
+
+print(select_sort(list))

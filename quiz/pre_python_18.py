@@ -14,3 +14,6 @@ print(new_list)
 ['exit', 'hi', 'playdata', 'intro']
 
 """
+file = ['exit.py','hi.py','playdata.hwp','intro.jpg']
+new_list = [i.split('.')[0] for i in file]
+print(new_list)

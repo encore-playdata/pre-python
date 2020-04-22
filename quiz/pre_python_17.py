@@ -23,3 +23,11 @@
 2056
 2060
 """
+
+first_year = 1988
+last_year = 2060
+term = last_year - first_year
+
+for i in range(term + 1):
+    if i % 4 == 0:
+        print (first_year + i)

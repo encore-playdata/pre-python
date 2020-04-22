@@ -10,3 +10,19 @@
 <출력>
 150
 """
+
+number1 = int(input("첫 번째 수를 입력하시오 : "))
+number2 = int(input("두 번째 수를 입력하시오 : "))
+calc = input("어떤 연산을 하실 건가요?: ")
+
+if calc == "+" :
+    print(number1 + number2)
+elif calc == "-" :
+    print(number1 - number2)
+elif calc == "*" :
+    print(number1 * number2)    
+elif number2 != 0 :
+    if calc == "/" :
+        print(number1 / number2)
+    elif calc == "//" :
+        print('몫:', number1 // number2, " 나머지:", number1 % number2)        

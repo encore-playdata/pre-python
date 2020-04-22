@@ -15,3 +15,15 @@ score : 88
 A
 
 """
+
+score = int(input('score : '))
+if score > 80 :
+    print ('A')
+elif score > 60 and score <= 80 :
+    print ('B')
+elif score > 40 and score <= 60 :
+    print ('C')
+elif score > 20 and score <= 40 :
+    print ('D')
+else:
+    print ('F')    
