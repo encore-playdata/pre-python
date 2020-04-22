@@ -19,3 +19,11 @@ HELLO
 입력 형식이 잘못되었습니다.
 
 """
+import re
+
+a = input()
+
+if len(re.findall(u"[^-a-zA-Z]", a)) == 0 :
+    print(a.swapcase())
+else :
+    print('입력 형식이 잘못되었습니다.')

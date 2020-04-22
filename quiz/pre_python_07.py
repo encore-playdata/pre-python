@@ -5,3 +5,10 @@
 <출력>
  45
 """
+
+n = 1
+for i in range(2, 101):
+    n += i
+    if n > 1000:
+        print(i)
+        break

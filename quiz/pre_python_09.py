@@ -15,3 +15,16 @@ score : 88
 A
 
 """
+
+a = input('score : ')
+
+if int(a) in range(81, 101):
+    print('A')
+elif int(a) in range(61, 81):
+    print('B')
+elif int(a) in range(41, 61):
+    print('C')
+elif int(a) in range(21, 41):
+    print('D')
+else:
+    print('F')

@@ -27,3 +27,12 @@
 
 
 """
+
+a = input('숫자를 입력하세요 : ')
+
+for i in range(1,int(a)+1):
+    star = i * '★'
+    print(star.rjust(int(a)))
+for j in range(int(a)-1,0,-1):
+    star2 = j * '★'
+    print(star2.rjust(int(a)))

@@ -10,3 +10,18 @@
 <출력>
 150
 """
+
+a = input('첫 번째 수를 입력하세요 : ')
+b = input('두 번째 수를 입력하세요 : ')
+c = input('어떤 연산을 하실 건가요? : ')
+
+if c == '+':
+    print(int(a) + int(b))
+elif c == '-':
+    print(int(a) - int(b))
+elif c == '*':
+    print(int(a) * int(b))
+elif c == '/':
+    print(int(a) / int(b))
+else:
+    print('+, -, *, / 연산만 가능합니다.')

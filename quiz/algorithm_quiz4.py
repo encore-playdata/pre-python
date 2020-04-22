@@ -17,3 +17,14 @@ print(greedy())
 동전의 종류 :  100 50 10
 100원 동전 10개, 50원 동전 1개, 10원 동전 0개
 '''
+
+def greedy():
+    total = int(input('액수입력 : '))
+    coin = input('동전의 종류 : ')
+    coin = list(map(int, coin.split(' ')))
+    count = 0
+    for i in coin:
+        count = total // i
+        total -= (total // i) * i
+        print('{}원 동전 {}개, '.format(i, count), end='')
+greedy()

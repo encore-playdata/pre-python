@@ -12,3 +12,13 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+list = []
+for i in range(1, 101):
+    list.append(str(i))
+for j in list:
+    if ('3' in j) or ('6' in j) or ('9' in j):
+        print('짝', end=' ')
+    elif int(j) % 5 == 0:
+        print('아자', end=' ')
+    else:
+        print(j, end=' ')
