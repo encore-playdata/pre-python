@@ -8,3 +8,12 @@ print(factorial(10))
 
 <출력>
 3628800'''
+
+def factory(num):
+	if num == 0:
+		return 1
+	else:
+		return num * factory(num - 1)
+
+print(factory(10))
+

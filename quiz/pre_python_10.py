@@ -9,3 +9,11 @@ print(factorial(5))
 <출력>
 120
   """
+def factoral(num):
+	result = 1
+	for i in range(num, 0, -1):
+		result *= i
+		print(i)
+	return(result)
+
+print(factoral(3))

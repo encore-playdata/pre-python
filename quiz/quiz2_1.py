@@ -13,3 +13,19 @@ print(is_palindrome("토마토"))
 False
 True
 '''
+
+def is_palindrome(word):
+  # for i in range(len(word) // 2):
+  #   if word[i] == word[-(i + 1)]:
+  #  	  return True
+  #   else:
+  #     return False
+	a = list(word)
+	b = list(reversed(a))
+	if a == b:
+		return True
+	else:
+		return False
+
+print(is_palindrome("radio"))
+print(is_palindrome('토마토'))

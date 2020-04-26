@@ -23,3 +23,9 @@
 2056
 2060
 """
+result = []
+for i in range(1988, 2061):
+  if i % 4 == 0:
+    result.append(str(i))
+
+print("\n".join(result))

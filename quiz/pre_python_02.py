@@ -10,3 +10,22 @@
 <출력>
 150
 """
+
+first = int(input('첫 번째 수를 입력하세요 :'))
+second = int(input('두 번째 수를 입력하세요 :'))
+cal = str(input('어떤 연산을 하실 건가요? :'))
+
+if cal == '+':
+	print(first + second)
+elif cal == '-':
+	print(first - second)
+elif cal == '*':
+	print(first * second)
+elif cal == '**':
+	print(first ** second)
+elif cal == '%':
+	print(first % second)
+elif cal == '/':
+	print(first / second)
+elif cal == '//':
+	print(first // second)

@@ -8,3 +8,15 @@
 <출력>
 남자
 """
+
+num = input('주민등록번호 : ')
+
+num_split = num.split("-")
+# print(num_split[1][0])
+
+if num_split[1][0] == '3' or '1':
+	print('남자')
+elif num_split[1][0] == '4' or '2':
+	print('여자')
+
+
