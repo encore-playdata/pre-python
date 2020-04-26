@@ -27,3 +27,9 @@
 
 
 """
+a = int(input('숫자를 입력하세요 :'))
+
+for k in range(a):
+    print('★'*k)
+for i in range(a):
+    print('★' * (a-i))

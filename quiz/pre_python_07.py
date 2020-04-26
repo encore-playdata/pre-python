@@ -5,3 +5,9 @@
 <출력>
  45
 """
+a = 2
+result = 1
+while result + a < 1000:
+    result += a
+    a += 1
+print(a)
