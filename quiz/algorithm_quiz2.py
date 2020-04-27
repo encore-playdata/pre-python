@@ -14,3 +14,7 @@ print(select_sort(list))
 [1, 2, 3, 6, 7, 8, 10, 21]
 
 '''
+def select_sort(list):
+    list.sort()
+    return list
+print (select_sort([6,2,3,7,8,10,21,1]))
