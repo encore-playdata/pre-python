@@ -8,3 +8,8 @@
 <출력>
 남자
 """
+num = input('주민등록번호 입력:')
+if int(num[7]) % 2 == 1:
+    print('남자')
+else:
+    print('여자')

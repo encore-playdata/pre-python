@@ -12,3 +12,13 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+answer = ''
+for i in range(1,101):
+    if '3' in str(i) or '6' in str(i) or '9' in str(i):
+        answer += '짝 '
+    elif i % 5 == 0:
+        answer += '아자 '
+    else:
+        answer = answer + str(i) +' '
+print(answer)
+

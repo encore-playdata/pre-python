@@ -13,3 +13,10 @@ print(is_palindrome("토마토"))
 False
 True
 '''
+w = input('입력: ')
+def is_palindrome(w):
+    for i in range(0,(len(w)//2) + 1):
+        if w[i] != w[len(w)-i-1]:
+            return False
+    return True
+print(is_palindrome(w))

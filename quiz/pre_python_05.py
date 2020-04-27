@@ -16,3 +16,9 @@
 5 * 9 = 45
 
 """
+i = 1
+a = int(input('출력할 단을 입력해주세요 :'))
+base = '{} * {} = {}'
+while i < 10:
+    print(base.format(a,i,a*i))
+    i += 1

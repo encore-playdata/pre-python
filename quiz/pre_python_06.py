@@ -23,7 +23,20 @@
  ★★★★
   ★★★
    ★★
-    ★
+
 
 
 """
+a = int(input('숫자를 입력해 주세요 :'))
+i = 1
+while i <= a:
+    base = '★' * i
+    print('{0:^10}'.format(base))
+    i += 1
+i = i-1
+while i > 1:
+    i -= 1
+    base = '★' * i
+    print('{0:^10}'.format(base))
+
+
