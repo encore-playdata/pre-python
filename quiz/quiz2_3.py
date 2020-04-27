@@ -22,3 +22,34 @@ card.print()
 잔액이 부족합니다
 잔액이 9000원 입니다.
 '''
+
+class Card():
+
+    def __init__(self):
+        self.money = 0
+
+    def charge(self, money):
+        self.money += money
+        print('잔액이 {}원 입니다.' .format(self.money))
+
+    def consume(self, price, place):
+        if self.money >= price:
+            if place == '영화관':
+                self.money -= int(price*0.8)
+                print('{}에서 {}원을 사용했습니다.'.format(place,int(price*0.8)))
+            else:
+                self.money -= price
+                print('{}에서 {}원을 사용했습니다.' .format(place,price))
+        else:
+            print('잔액이 부족합니다.')
+
+    def print(self):
+        print('잔액이 {}원 입니다.' .format(self.money))
+
+
+card = Card()
+card.charge(20000)
+card.consume(3000,'마트')
+card.consume(10000,'영화관')
+card.consume(13000,'마트')
+card.print()

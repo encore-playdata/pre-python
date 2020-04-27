@@ -10,3 +10,14 @@ print("%d년 %d월 %d일은 %s 입니다." % (myYear, myMonth, myDay, printDayOf
 일을 입력하시오 : 13
 2020년 3월 13일은 금요일 입니다.
 '''
+from datetime import date
+
+myYear = int(input('연도를 입력하시오 : '))
+myMonth = int(input('월을 입력하시오 : '))
+myDay = int(input('일을 입력하시오 : '))
+
+def printDayOfTheWeek(year, month, day):
+    weekday = ['월요일','화요일','수요일', '목요일', '금요일', '토요일','일요일']
+    return weekday[date(year, month, day).weekday()]
+
+print("%d년 %d월 %d일은 %s 입니다." % (myYear, myMonth, myDay, printDayOfTheWeek(myYear, myMonth, myDay)))
