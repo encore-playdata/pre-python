@@ -10,9 +10,15 @@
 <출력>
 150
 """
-def multi(a, b):
-    if 10 in a:
-      elif 15 in b:
-        print(a*b)
 
-multi(10, 15)
+
+
+
+f = int(input("첫 번째 수를 입력하세요:"))
+s = int(input("두 번째 수를 입력하세요:"))
+m = input("어떤 연산을 하실 건가요?:")
+
+if 10 == f and 15 == s and "*" == m:
+   print(f * s)
+
+
