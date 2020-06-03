@@ -10,3 +10,9 @@
 <출력>
 150
 """
+def multi(a, b):
+    if 10 in a:
+      elif 15 in b:
+        print(a*b)
+
+multi(10, 15)

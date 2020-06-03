@@ -13,7 +13,12 @@
 ★★★★★
 ★★★★★
  """
-for i in range(4):            # 4번 반복. 바깥쪽 루프는 세로 방향
-    for j in range(5):        # 5번 반복. 안쪽 루프는 가로 방향
+
+p = int(input("가로의 숫자를 입력하시오:"))
+h = int(input("세로의 숫자를 입력하시오:"))
+
+
+for i in range(p):            # 4번 반복. 바깥쪽 루프는 세로 방향
+    for j in range(h):        # 5번 반복. 안쪽 루프는 가로 방향
         print('★', end="")    # 별 출력. end에 ''를 지정하여 줄바꿈을 하지 않음
     print()
