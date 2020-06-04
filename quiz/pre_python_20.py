@@ -12,3 +12,18 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+
+def game369(num):
+
+    for n in range(1, num+1):
+        n_text = str(n)
+        if "3" in n_text or "6" in n_text or "9" in n_text:
+        # if 3 in n or 6 in n or 9 in n: # 이건 왜 안될까.
+            print("짝", end=' ') # end=' '는 여기서 띄어쓰지 말라는 것. 모두 일렬로 하기 위해 다 붙인다.
+        elif n%5 == 0 :
+            print("아자", end=' ')
+        else:
+            print(n, end=' ')
+
+
+game369(100)

@@ -10,3 +10,8 @@ print(namelist)
 <출력>
 ['Aimy', 'Bob', 'Kelly', 'Mary', 'Michale', 'Sams', 'Tom']
 """
+
+namelist = ['Mary', 'Sams', 'Aimy', 'Tom', 'Michale', 'Bob', 'Kelly']
+namelist.sort() # 기본은 숫자나 알파벳 순서대로 재정렬
+
+print(namelist)
