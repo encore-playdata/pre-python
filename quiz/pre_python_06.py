@@ -27,3 +27,12 @@
 
 
 """
+p = int(input("숫자를 입력하세요:"))
+
+
+for i in range(1, p+1):
+    print(' '*(p-i), end="")
+    print('★'*i)
+for i in range(1, p+1):
+    print(' '*i, end="")
+    print('★'*(p-i))
