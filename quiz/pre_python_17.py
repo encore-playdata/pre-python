@@ -23,3 +23,10 @@
 2056
 2060
 """
+
+Years = list(range(1988,2061))
+
+for i in range(len(Years)):
+    Year = Years[i]
+    if Year % 4 == 2: print(Year)
+    else: pass

@@ -8,3 +8,13 @@
 <출력>
 남자
 """
+
+def checkSex(IDNs):
+    Factors = IDNs.split()
+    Number = list(Factors[2])
+    if int(Number[7]) % 2 == 0: return '여자'
+    else: return '남자'
+
+IDNs = input('<입력> 주민등록번호 : 000000-0000000 ')
+
+print(checkSex(IDNs))

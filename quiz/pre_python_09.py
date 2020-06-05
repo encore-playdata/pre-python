@@ -15,3 +15,14 @@ score : 88
 A
 
 """
+
+def gradingScore(Score):
+    if 80 < Score <= 100: return "A"
+    elif 60 < Score <= 80: return "B"
+    elif 40 < Score <= 60: return "C"
+    elif 20 < Score <= 40: return "D"
+    else: return "F"
+
+Score = int(input('score : '))
+
+print(gradingScore(Score))

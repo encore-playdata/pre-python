@@ -9,3 +9,8 @@ print(Triangle(10,20))
 100
 
 """
+
+def Triangle(Width, Height):
+    return (Width * Height) // 2
+
+print(Triangle(10,20))

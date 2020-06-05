@@ -27,3 +27,18 @@
 
 
 """
+
+def dmakeADiamond(Number):
+    i = 0
+    j = Number
+    while i < Number:
+        i = i + 1
+        print(('★' * i).center(Number))
+    while 0 < j:
+        j = j - 1
+        print(('★' * j).center(Number))
+
+
+Number = int(input("숫자를 입력하세요 : "))
+
+dmakeADiamond(Number)

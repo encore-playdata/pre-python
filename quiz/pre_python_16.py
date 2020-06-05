@@ -6,3 +6,10 @@
 3  6  9  12  15  18  21  24  27  30  33  36  39  42  45  48  
 
 """
+
+Numbers = list(range(1, 51))
+
+for i in range(len(Numbers)):
+    Number = Numbers[i]
+    if Number % 3 == 0: print(Number, end=' ')
+    else: pass

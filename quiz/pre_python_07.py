@@ -5,3 +5,12 @@
 <출력>
  45
 """
+
+a = 0
+while a < 100:
+    a = a + 1
+    if (a**2 + a) // 2 <= 1000:
+        continue
+    else:
+        print(a)
+        break

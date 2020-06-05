@@ -9,3 +9,15 @@ print(factorial(5))
 <출력>
 120
   """
+
+#def factorial(x):
+#    import math
+#    return math.factorial(x)
+
+def factorial(x):
+    y = 1
+    for i in range(1, x+1):
+        y *= i
+    return y
+
+print(factorial(5))

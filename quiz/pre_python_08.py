@@ -7,3 +7,11 @@
 <출력>
 짝수입니다.
 """
+
+def checkEven():
+    if N % 2 == 0: return '짝수입니다.'
+    else: return '홀수입니다.'
+
+N = int(input('정수를 입력하세요 : '))
+
+print(checkEven())

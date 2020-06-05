@@ -12,3 +12,16 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+
+def samYukGu(N):
+    for i in range(1, N + 1):
+        Number = str(i)
+        if '3' in Number or '6' in Number or '9' in Number:
+            print("짝", end=' ')
+        elif i % 5 == 0:
+            print("아자", end=' ')
+        else: print(i, end = ' ')
+
+N = int(input("얼마까지 369게임? : "))
+
+samYukGu(N)

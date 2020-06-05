@@ -10,3 +10,13 @@ print(list)
 ['charlie', 'foxtrot']
 
  """
+
+a = ['alpha', 'bravo', 'charlie', 'delta', 'echo', 'foxtrot', 'golf', 'hotel', 'india']
+
+i = 0
+while i < len(a):
+    if len(a[i]) != 7:
+        del (a[i])
+    i += 1
+
+print(a)

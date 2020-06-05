@@ -10,3 +10,15 @@
 <출력>
 150
 """
+
+First = int(input('첫 번째 수를 입력하세요 : '))
+Second = int(input('두 번째 수를 입력하세요 : '))
+Operator = input('어떤 연산을 하실 건가요? : ')
+
+if Operator == "+": print(First + Second)
+elif Operator == "-": print(First - Second)
+elif Operator == "*": print(First * Second)
+elif Operator == "**": print(First ** Second)
+elif Operator == "/": print(First / Second)
+elif Operator == "//": print(First // Second)
+else: print(First % Second)
