@@ -12,3 +12,14 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+result = []
+for i in range (1,101):
+    if i == 3  or i == 6 or i == 9:
+        result.append('짝')
+    elif (int(i / 10) == 3) or (int(i / 10) == 6) or (int(i / 10) == 9):
+        result.append("짝")
+    elif i % 5 == 0:
+        result.append('아자')
+    else:
+        result.append(i)
+print(result)

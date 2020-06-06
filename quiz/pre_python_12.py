@@ -10,3 +10,7 @@ print(namelist)
 <출력>
 ['Aimy', 'Bob', 'Kelly', 'Mary', 'Michale', 'Sams', 'Tom']
 """
+
+namelist1 = ['Mary', 'Sams', 'Aimy', 'Tom', 'Michale', 'Bob', 'Kelly']
+namelist = sorted(namelist1)
+print(namelist)

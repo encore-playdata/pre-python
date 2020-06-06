@@ -10,3 +10,7 @@ print(list)
 ['charlie', 'foxtrot']
 
  """
+a = ['alpha', 'bravo', 'charlie', 'delta', 'echo', 'foxtrot', 'golf', 'hotel', 'india']
+for list in a:
+    if len(list) >= 6:
+        print(list)
