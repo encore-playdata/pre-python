@@ -14,3 +14,14 @@ print(new_list)
 ['exit', 'hi', 'playdata', 'intro']
 
 """
+file = ['exit.py', 'hi.py', 'playdata.hwp', 'intro.jpg']
+
+import os
+
+# new_list = [os.path.splitext(x)[0] for x in file] 방법이 두 개다.
+
+new_list = []
+for x in file:
+    new_list.append(os.path.splitext(x)[0]) # 새로운 변수를 만들어 확장자를 없앤 파일명을 넣어준다.
+print(new_list)
+

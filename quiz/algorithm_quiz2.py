@@ -14,3 +14,33 @@ print(select_sort(list))
 [1, 2, 3, 6, 7, 8, 10, 21]
 
 '''
+# def selection_sort(list):
+  #    if list != []:
+   #       x = min(list)
+    #      list.remove(x)
+     #     return[x] + selection_sort(list)
+      # else:
+        #  return[]
+
+
+
+
+
+
+def select_sort(a):
+
+
+    for i in range(len(a)): # 리스트의 크기-1만큼 반복, 그럼 마지막 수는 어떻게 비교?
+
+        for j in range(i+1, len(a)): # 해당 인덱스+1부터, 리스트 크기만큼 반복
+            if a[i] > a[j]: # 인덱스의 값이 비교 인덱스보다 더 크다면 / 6하고 2~21까지 비교교하는데 6보다 작은 건 다 걸리는 거 아닌가? 어떻게 최소값 하나만 나오게 하는지?
+                a[i] , a[j]  = a[j], a[i] # swap 해주기
+    return a
+
+
+list = [6,2,3,7,8,10,21,1]
+
+print(select_sort(list))
+# 정렬 후 리스트
+
+

@@ -17,3 +17,21 @@ print(greedy())
 동전의 종류 :  100 50 10
 100원 동전 10개, 50원 동전 1개, 10원 동전 0개
 '''
+
+
+def greedy():
+    cost = int(input("액수입력: "))
+
+    K = input("동전의 종류 : ").split(",")
+
+    coin = sorted([int(K[i]) for i in range(len(K))], reverse=True)
+
+    for i in range(len(coin)):
+        case = cost // coin[i]
+
+        cost = cost % coin[i]
+
+        print("{0}원 동전 {1}개,".format(coin[i], case), end=" ")
+
+
+print(greedy())

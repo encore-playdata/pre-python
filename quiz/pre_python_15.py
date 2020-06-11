@@ -8,3 +8,15 @@
 <출력>
 남자
 """
+
+id_number = (input("주민등록번호 : "))
+
+sex = id_number[7] # 주민번호의 8번째 위치해 있는 숫자를 검색한다는 뜻. sex 변수로 지정.
+
+
+if sex == '1' or sex == '3':  # 6번째 자리의 숫자가 1일경우
+    print("남자")
+elif sex == '2' or sex == '4':  # 위와 동일하게 2일경우
+    print("여자")
+else:
+    print("삐빅")

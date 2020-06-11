@@ -9,3 +9,15 @@ print(Triangle(10,20))
 100
 
 """
+
+
+
+
+a = int(input("가로를 입력하시오:"))
+b = int(input("높이를 입력하시오:"))
+
+def Triangle(a, b):
+    return(a * b / 2)
+
+print(Triangle(a, b))
+
