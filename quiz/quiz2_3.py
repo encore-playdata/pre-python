@@ -22,3 +22,37 @@ card.print()
 잔액이 부족합니다
 잔액이 9000원 입니다.
 '''
+
+
+class Card():
+    '''카드'''
+
+    def __init__(self):
+        '''초기화 함수'''
+        self.amount = 0
+
+    def charge(self, amount):
+        self.amount += amount
+        print("잔액이 {}원 입니다.".format(amount))
+
+    def consume(self, amount, location):
+        if location == "영화관":
+            sales = int(amount * 0.8)
+            self.amount -= sales
+            print("{}에서 {}원 사용했습니다.".format(location, sales))
+        elif self.amount < amount:
+            print("잔액이 부족합니다.")
+        else:
+            self.amount -= amount
+            print("{}에서 {}원 사용했습니다.".format(location, amount))
+
+    def print(self):
+        print("잔액이 {}원 입니다.".format(self.amount))
+
+
+card = Card()
+card.charge(20000)
+card.consume(3000, "마트")
+card.consume(10000, "영화관")
+card.consume(13000, "마트")
+card.print()

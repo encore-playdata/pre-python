@@ -27,3 +27,16 @@
 
 
 """
+a = int(input('숫자를 입력하세요 :'))
+
+if isinstance(a, int):
+    for b in range(1, a+1):
+        c = a - b
+        d = c * ' '
+        e = b * '★'
+        print('{}{}'.format(d, e))
+    for b in range(a, 0, -1):
+        c = b - 1
+        d = (a-c) * ' '
+        e = c * '★'
+        print('{}{}'.format(d, e))

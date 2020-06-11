@@ -13,3 +13,15 @@
 ★★★★★
 ★★★★★
  """
+
+hrz_num = int(input('가로의 숫자를 입력하시오 : '))
+vtc_num = int(input('세로의 숫자를 입력하시오 : '))
+
+
+def stars(star, vtc_num, c=0):
+    if c < vtc_num:
+        print(star * hrz_num)
+        stars(star, vtc_num, c=c + 1)
+
+
+stars('★', vtc_num)

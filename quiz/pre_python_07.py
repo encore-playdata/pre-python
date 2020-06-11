@@ -5,3 +5,8 @@
 <출력>
  45
 """
+for a in range(1, 101):
+    s = (a*(1+a))/2
+    if s > 1000:
+        print(a)
+        break

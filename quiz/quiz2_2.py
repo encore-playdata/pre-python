@@ -10,3 +10,38 @@ print("%d년 %d월 %d일은 %s 입니다." % (myYear, myMonth, myDay, printDayOf
 일을 입력하시오 : 13
 2020년 3월 13일은 금요일 입니다.
 '''
+
+import calendar
+
+myYear = int(input('연도를 입력하시오 : '))
+myMonth = int(input('월를 입력하시오 : '))
+myDay = int(input('일를 입력하시오 : '))
+
+
+def printDayOfTheWeek(a, b, c):
+    a = calendar.weekday(a, b, c)
+    if a == 0:
+        a = "월요일"
+        return a
+    elif a == 1:
+        a = "화요일"
+        return a
+    elif a == 2:
+        a = "수요일"
+        return a
+    elif a == 3:
+        a = "목요일"
+        return a
+    elif a == 4:
+        a = "금요일"
+        return a
+    elif a == 5:
+        a = "토요일"
+        return a
+    else:
+        a = "일요일"
+        return a
+
+
+print("%d년 %d월 %d일은 %s 입니다." % (myYear, myMonth, myDay, printDayOfTheWeek(myYear, myMonth, myDay)))
+

@@ -10,3 +10,17 @@
 <출력>
 150
 """
+fir_num = int(input('첫 번째 수를 입력하세요 : '))
+sec_num = int(input('두 번째 수를 입력하세요 : '))
+compute = input('어떤 연산을 하실 건가요? : ')
+
+if compute == '*':
+    print(fir_num * sec_num)
+elif compute == '/':
+    print(fir_num / sec_num)
+elif compute == '+':
+    print(fir_num + sec_num)
+elif compute == '-':
+    print(fir_num - sec_num)
+else:
+    print('올바른 연산이 아닙니다.')

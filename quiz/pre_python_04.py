@@ -9,3 +9,8 @@ print(Triangle(10,20))
 100
 
 """
+def Triangle(a, b):
+    tri = a * b / 2
+    return int(tri)
+
+print(Triangle(10, 20))

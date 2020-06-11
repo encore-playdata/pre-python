@@ -23,3 +23,8 @@
 2056
 2060
 """
+
+years = list(range(1988,2061))
+wor_cup = years[::4]
+for ind, yrs in enumerate(wor_cup):
+    print(yrs)

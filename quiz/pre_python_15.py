@@ -8,3 +8,17 @@
 <출력>
 남자
 """
+
+
+def ssns():
+    ssn = input("주민등록번호 : ")
+    a = ssn.split("-")[1]
+    b = int(a[0])
+    print(b)
+    if b == 1 or b == 3:
+        print("남자")
+    else:
+        print("여자")
+
+
+ssns()

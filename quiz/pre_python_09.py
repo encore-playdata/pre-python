@@ -15,3 +15,28 @@ score : 88
 A
 
 """
+
+
+def gpa():
+    num = input("score : ")
+    try:
+        val = int(num)
+        if val <= 20:
+            print("F")
+        elif val <= 40:
+            print("D")
+        elif val <= 60:
+            print("C")
+        elif val <= 80:
+            print("B")
+        elif val <= 100:
+            print("A")
+        else:
+            print("invalid input")
+            return gpa()
+    except ValueError:
+        print("invalid input")
+        return gpa()
+
+
+gpa()
