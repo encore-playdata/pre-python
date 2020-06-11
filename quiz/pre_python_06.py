@@ -27,3 +27,14 @@
 
 
 """
+
+number = int(input('숫자를 입력하세요 :'))
+for i in range(1,2*number):
+    if i <= number:
+        space = ' '*(number-i)
+        star = '*'*i
+        print('{}{}'.format(space,star))
+    else:
+        space = ' '*(i-number)
+        star = '*'*(2*number-i)
+        print('{}{}'.format(space,star))

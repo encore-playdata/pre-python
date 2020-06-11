@@ -8,3 +8,14 @@
 <출력>
 남자
 """
+number = input('주민등록번호를 입력해주세요. 000000-0000000 >')
+if len(number) != 14:
+    print('입력한 주민번호를 다시 확인해주세요.')
+else:
+    if number[7] in ['1','3']:
+        print('남자')
+    elif number[7] in ['2','4']:
+        print('여자')
+    else:
+        print('입력한 주민번호를 다시 확인해주세요.')
+

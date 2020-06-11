@@ -11,7 +11,7 @@ print 기능(print) # 잔액이 ( ) 원 입니다.
 card = Card()
 card.charge(20000)
 card.consume(3000,'마트')
-card.consume(10000,'영화관')
+card.consume(80000,'영화관')
 card.consume(13000,'마트')
 card.print()
 
@@ -22,3 +22,30 @@ card.print()
 잔액이 부족합니다
 잔액이 9000원 입니다.
 '''
+class Card():
+    '''카드'''
+    def __init__(self):
+        '''초기화 함수'''
+        self.money = 0
+    
+    def charge(self,charge):
+        '''충전'''
+        self.money += charge
+        print('잔액이 {}원 입니다.'.format(self.money))
+        
+    def consume(self,consume,where):
+        if self.money > consume:
+            self.money -= consume
+            print('{}에서 {}원 사용했습니다.'.format(where,consume))
+        else:
+            print('잔액이 부족합니다.')
+    
+    def print(self):
+        print('잔액이 {}원 입니다.'.format(self.money))
+        
+card = Card()
+card.charge(20000)
+card.consume(3000,'마트')
+card.consume(8000,'영화관')
+card.consume(13000,'마트')
+card.print()

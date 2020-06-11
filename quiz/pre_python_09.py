@@ -15,3 +15,17 @@ score : 88
 A
 
 """
+score = int(input('점수를 입력하세요 >'))
+if score >= 0 and score <= 100:
+    if score>80:
+        print('A')
+    elif score > 60:
+        print('B')
+    elif score > 40:
+        print('C')
+    elif score > 20:
+        print('D')
+    else:
+        print('F')
+else:
+    print('0에서 100사이의 값을 입력해주세요')

@@ -5,3 +5,12 @@
 <출력>
  45
 """
+
+sum = 0
+i = 0
+if True:
+    while sum<1000:
+        i += 1
+        sum += i
+    
+    print(i)

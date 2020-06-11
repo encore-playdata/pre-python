@@ -17,3 +17,26 @@ print(greedy())
 동전의 종류 :  100 50 10
 100원 동전 10개, 50원 동전 1개, 10원 동전 0개
 '''
+
+def greedy():
+    put = int(input('액수입력 : '))
+    sort = input('동전의 종류 : ').split()
+    answer = []
+    if '500' in sort:
+        count = put//500
+        put = put % 500
+        print('500원 동전 {}개'.format(count),end=', ') 
+    if '100' in sort:
+        count = put//100
+        put = put % 100
+        print('100원 동전 {}개'.format(count),end=', ')
+    if '50' in sort:
+        count = put//50
+        put = put % 50
+        print('50원 동전 {}개'.format(count),end=', ')
+    if '10' in sort:
+        count = put//10
+        put = put % 10
+        print('10원 동전 {}개'.format(count),end='')    
+    return ''
+print(greedy())
