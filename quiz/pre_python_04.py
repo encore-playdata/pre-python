@@ -9,3 +9,13 @@ print(Triangle(10,20))
 100
 
 """
+
+
+def Triangle(a, b):
+    a = int(input("삼각형의 가로를 입력하세요 : "))
+    b = int(input("삼각형의 세로를 입력하세요 : "))
+    result = int(a * b / 2)
+    return result
+
+
+print(Triangle(10, 20))

@@ -23,3 +23,13 @@
 2056
 2060
 """
+
+for i in range(1988, 2061, 1):
+    a1 = list(str(i))
+    a2 = list(map(int,a1))
+    if a2[-1] == 0 or a2[-1] == 4 or a2[-1] == 8:
+        if a2[-2] % 2 != 0:
+            print(i)
+    elif a2[-1] == 2 or a2[-1] == 6:
+        if a2[-2] % 2 == 0:
+            print(i)

@@ -12,3 +12,20 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+
+
+ls = []
+
+for i in range(1, 101):
+    ls.append(i)
+
+for i, z in enumerate(ls):
+    v = str(z)
+    if str(v[-1]) == "3" or str(v[-1]) == "6" or str(v[-1]) == "9":
+        ls[i] = "짝"
+    elif str(v[0:1]) == "3" or str(v[0:1]) == "6" or str(v[0:1]) == "9":
+        ls[i] = "짝"
+    elif z % 5 == 0:
+        ls[i] = "아자"
+
+print(" ".join(map(str, ls)))
