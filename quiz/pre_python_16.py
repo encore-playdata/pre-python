@@ -6,3 +6,9 @@
 3  6  9  12  15  18  21  24  27  30  33  36  39  42  45  48  
 
 """
+list1=list()
+for i in range(1,51):
+    if i % 3 ==0:
+        list1.append(str(i))
+
+print(" ".join(list1))

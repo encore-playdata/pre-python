@@ -18,4 +18,12 @@ HELLO
 <출력>
 입력 형식이 잘못되었습니다.
 
+
 """
+str=input("<입력> : ")
+if str.isupper():
+    print(str.lower())
+elif str.islower():
+    print(str.upper())
+else:
+    print("입력 형식이 잘못되었습니다.")

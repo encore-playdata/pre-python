@@ -9,3 +9,10 @@ print(factorial(5))
 <출력>
 120
   """
+def factorial(x):
+    total=1
+    for i in range(x):
+        total=total*(i+1)
+    return total
+
+print(factorial(5))

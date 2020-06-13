@@ -10,3 +10,22 @@
 <출력>
 150
 """
+
+a=float(input("첫 번째 수를 입력하시오 : "))
+b=float(input("두 번째 수를 입력하시오 : "))
+opr=input("어떤 연산을 하실 건가요? : ")
+
+if opr=="+":
+    print(a+b)
+elif opr=="-":
+    print(a-b)
+elif opr=="*":
+    print(a*b)
+elif opr=="/":
+    print(a/b)
+elif opr=="%":
+    print(a%b)
+elif opr=="**":
+    print(a**b)
+elif opr=="//":
+    print(a//b)

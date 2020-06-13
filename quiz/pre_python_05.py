@@ -16,3 +16,8 @@
 5 * 9 = 45
 
 """
+
+i=int(input("출력할 단을 입력해주세요 : "))
+
+for a in range(9):
+    print("{} * {} = {}".format(i,a+1,i*(a+1)))

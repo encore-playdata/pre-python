@@ -9,3 +9,12 @@ print(Triangle(10,20))
 100
 
 """
+def Triangle(a,b):
+    result=0.5*a*b
+    return result
+
+
+a = float(input("가로 : "))
+b = float(input("세로 : "))
+
+print(Triangle(a,b))

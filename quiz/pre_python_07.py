@@ -5,3 +5,9 @@
 <출력>
  45
 """
+sum=0
+for i in range(100):
+    sum=sum+i
+    if sum >= 1000:
+        break
+print(sum,i)

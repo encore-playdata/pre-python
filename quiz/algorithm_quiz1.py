@@ -8,3 +8,10 @@ print(factorial(10))
 
 <출력>
 3628800'''
+def factorial(val):
+    if val==1:
+        return 1
+    else:
+        return val*factorial(val-1)
+
+print(factorial(5))
