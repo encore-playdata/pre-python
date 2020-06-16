@@ -8,3 +8,14 @@ print(factorial(10))
 
 <출력>
 3628800'''
+
+def factorial(n): 
+    if n == 1: return 1 
+    dp_arr = [0, 1] 
+
+    for i in range(2, n+1): 
+        dp_arr.append(dp_arr[-1]*i)
+    print(dp_arr)
+    return dp_arr[n]
+
+print(factorial(10)) 

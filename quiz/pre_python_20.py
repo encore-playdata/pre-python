@@ -12,3 +12,13 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+i = 1 
+
+while i <= 100: 
+    if i % 5 == 0: print("아자", end=' ') 
+    else: 
+        tmp_string = str(i) 
+        if '3' in tmp_string or '6' in tmp_string or '9' in tmp_string: 
+            print("짝", end=' ')
+        else: print(tmp_string, end=' ')
+    i += 1 

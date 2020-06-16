@@ -17,3 +17,25 @@ print(greedy())
 동전의 종류 :  100 50 10
 100원 동전 10개, 50원 동전 1개, 10원 동전 0개
 '''
+
+account = int(input("액수입력 : ")) 
+alist = list(map(int, input("동전의 종류 : ").split()))
+alist.sort(reverse=True) 
+
+res = [0]*len(alist) 
+idx = 0
+while account and idx < len(alist): 
+    coin = alist[idx] 
+    if coin <= account: 
+        res[idx] = account // coin 
+        account -= coin * (account // coin)
+    idx += 1
+
+astring = "" 
+for i in range(len(alist)): 
+    tmp_string = "%d원 동전 %d개" % (alist[i], res[i]) 
+    astring += tmp_string
+    astring += ', ' 
+
+print(astring[:-2])
+

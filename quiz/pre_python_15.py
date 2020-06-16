@@ -8,3 +8,8 @@
 <출력>
 남자
 """
+astring = input("주민등록번호 :")
+number = int(astring.split("-")[1][0])
+if number % 2 == 1: print("남자")
+else: print("여자")
+

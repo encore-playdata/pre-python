@@ -14,3 +14,21 @@ print(select_sort(list))
 [1, 2, 3, 6, 7, 8, 10, 21]
 
 '''
+
+def select_sort(alist): 
+
+    n = len(alist) 
+
+    for i in range(n): 
+        idx = i 
+        tmp = alist[i] 
+        for j in range(i+1, n): 
+            if alist[j] < tmp: 
+                tmp, idx = alist[j], j 
+        alist[i], alist[idx] = alist[idx], alist[i] 
+
+    return alist
+
+alist = [6,2,3,7,8,10,21,1]
+
+print(select_sort(alist)) 

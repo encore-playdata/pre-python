@@ -9,3 +9,12 @@ print(factorial(5))
 <출력>
 120
   """
+
+def factorial(n): 
+	dp_arr = [1] 
+	for i in range(1, n+1): 
+		dp_arr.append(i*dp_arr[-1])
+	
+	return dp_arr[n]
+
+print(factorial(5)) 

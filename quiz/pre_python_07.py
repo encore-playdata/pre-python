@@ -5,3 +5,13 @@
 <출력>
  45
 """
+
+i, ans = 1, 1 
+total = 1 
+while i <= 100: 
+    i += 1 
+    total += i 
+    ans = i 
+    if total >= 1000: 
+        print(ans) 
+        break 
