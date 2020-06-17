@@ -35,7 +35,6 @@ class Discount():
 class Card(Discount):
     def __init__(self):
         self._balance = 0
-        self._withdrawal_record = list(tuple())
 
     def charge(self, deposit):
         self._balance += deposit
@@ -49,7 +48,7 @@ class Card(Discount):
         self._balance -= charge
 
     def print(self):
-        print('잔액이 {}원입니다'.format(self._balance))
+        print('잔액이 {}원 입니다.'.format(self._balance))
 
 
 multi_card=Card()
