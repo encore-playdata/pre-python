@@ -5,3 +5,12 @@
 <출력>
  45
 """
+
+def getFirstNum():
+    sum = 0
+    for i in range(101):
+        sum += i
+        if sum >= 1000:
+            return i
+
+print(getFirstNum())

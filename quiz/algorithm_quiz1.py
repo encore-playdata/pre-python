@@ -7,4 +7,16 @@
 print(factorial(10))
 
 <출력>
-3628800'''
+3628800
+'''
+
+def factorial(k):
+    if k == 1:
+        return 1
+    return k*factorial(k-1)
+
+def main():
+    k = int(input('숫자 입력 : '))
+    print(factorial(k))
+
+main()

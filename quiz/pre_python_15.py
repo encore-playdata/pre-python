@@ -8,3 +8,15 @@
 <출력>
 남자
 """
+
+# def find_gender(security_num):
+
+def determineGender(security_num):
+    if security_num[1][0] == '1':
+        print('남자')
+    else:
+        print('여자')
+
+def main():
+    security_num = input('주민등록번호 : ').split('-')
+    determineGender(security_num)

@@ -17,3 +17,33 @@ print(greedy())
 동전의 종류 :  100 50 10
 100원 동전 10개, 50원 동전 1개, 10원 동전 0개
 '''
+
+def greedy_dude():
+    price = int(input('액수 입력 : '))
+    hundred, fifty, ten = map(int, input('100원, 50원, 10원 갯수 입력 : ').split() )
+    hc = fc = tc = 0  # 동전 카운트
+    sum = 0         #
+
+    while hc < hundred and hc*100 < price and price > sum:
+        hc += 1
+        sum += 100
+
+    while fc < fifty and fc*50 < price and price > sum:
+        fc += 1
+        sum += 50
+
+    while tc < ten and tc*100 < price and price > sum:
+        tc += 1
+        sum += 10
+
+    print('100원 : {}개, 50원 : {}개, 10원 : {}개'.format(hc, fc, tc))
+
+
+def main():
+    greedy_dude()
+
+
+
+main()
+
+
