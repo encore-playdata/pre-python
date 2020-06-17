@@ -27,3 +27,5 @@ else:
     elif c == "/":
         d = a/b
         print(d)
+    else:
+        print("※잘못입력하셨습니다※")
