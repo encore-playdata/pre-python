@@ -20,30 +20,17 @@ print(greedy())
 
 def greedy_dude():
     price = int(input('액수 입력 : '))
-    hundred, fifty, ten = map(int, input('100원, 50원, 10원 갯수 입력 : ').split() )
-    hc = fc = tc = 0  # 동전 카운트
-    sum = 0         #
+    coins = list(map(int, input('동전의 종류 : ').split()))
+    for i in range(len(coins)):
+        if coins[i] == 0:
+            assert Exception(ZeroDivisionError)
+        cnt = price // coins[i]
+        price = price - ( coins[i] * cnt )
 
-    while hc < hundred and hc*100 < price and price > sum:
-        hc += 1
-        sum += 100
-
-    while fc < fifty and fc*50 < price and price > sum:
-        fc += 1
-        sum += 50
-
-    while tc < ten and tc*100 < price and price > sum:
-        tc += 1
-        sum += 10
-
-    print('100원 : {}개, 50원 : {}개, 10원 : {}개'.format(hc, fc, tc))
-
+        if i < len(coins)-1 : print(f'{coins[i]}원 동전 : {cnt}개', end=', ')
+        else: print(f'{coins[i]}원 동전 : {cnt}개')
 
 def main():
     greedy_dude()
 
-
-
 main()
-
-

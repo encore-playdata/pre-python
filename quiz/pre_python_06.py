@@ -13,30 +13,20 @@
 
 n = int(input('숫자를 입력하세요 : '))
 round = n*2+1
+space = " "
+star = "*"
+
 for i in range(round):
-    if i < n:
-        for j in range(n-i):
-            print(' ', end='')
-        for k in range(i):
-            print('*', end='')
-        print()
+    if i < n: print(space*(n-i) + star*i)
+    if i >= n: print(space * (i - n) + star * (round - i - 1))
+# i > 6
+# n = 5
+# round = 11
+# i =
+# 6 7 8 9 10
+# 5 4 3 2 1
 
-    if i == n:
-        for l in range(n):
-            print('*', end='')
-        print()
 
-    if i > n: # i > 6
-        # n = 5
-        # round = 11
-        # i =
-        # 6 7 8 9 10
-        # 5 4 3 2 1
-        for m in range(i-n):
-            print(' ', end='')
-        for o in range(round-i-1):
-            print('*', end='')
-        print()
 
 
 
