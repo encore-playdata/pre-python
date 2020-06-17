@@ -24,47 +24,21 @@ multi_card.print()
 잔액이 5700.0원 입니다
 '''
 
-class Movie_Card():
-    def __init__(self):
-        pass
-
-    def movie_discount(self, charge):
-        return charge * 0.9
-
-
-class Mart_Card():
-    def __init__(self):
-        pass
-
-    def mart_discount(self, charge):
-        return charge*0.9
+class Discount():
+    def check_dc(self, charge, used_for):
+        if used_for == '영화관': return charge * 0.8
+        elif used_for == '마트': return charge * 0.9
+        elif used_for == '교통': return charge * 0.9
+        else:                   return charge * 1.0
 
 
-class Transit_Card():
-    def __init__(self):
-        pass
-
-    def transit_discount(self, charge):
-        return charge*0.9
-
-
-class Card(Movie_Card, Mart_Card, Transit_Card):
+class Card(Discount):
     def __init__(self):
         self._balance = 0
         self._withdrawal_record = list(tuple())
 
     def charge(self, deposit):
         self._balance += deposit
-
-    def check_dc(self, charge, used_for):
-        if used_for == '영화관':
-            return super().mart_discount(charge)
-        elif used_for == '마트':
-            return super().movie_discount(charge)
-        elif used_for == '교통':
-            return super().transit_discount(charge)
-        else:
-            return charge * 1.0
 
     def consume(self, charge, used_for):
         charge = self.check_dc(charge, used_for)
@@ -73,7 +47,6 @@ class Card(Movie_Card, Mart_Card, Transit_Card):
             return
         print('{}에서 {}원 사용했습니다.'.format(used_for, charge))
         self._balance -= charge
-
 
     def print(self):
         print('잔액이 {}원입니다'.format(self._balance))
