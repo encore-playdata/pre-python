@@ -18,13 +18,18 @@ def selection_sort(l):
     print(l)
     for i in range(len(l)):
         least = i
-        for j in range(i+1, len(l)):
+        for j in range(i + 1, len(l)):
             if l[j] < l[i]:
                 least = j
         l[i], l[least] = l[least], l[i]
     print(l)
 
-selection_sort([6,2,3,7,8,10,21,1])
+
+def main():
+    selection_sort([6, 2, 3, 7, 8, 10, 21, 1])
+
+
+main()
 
 
 

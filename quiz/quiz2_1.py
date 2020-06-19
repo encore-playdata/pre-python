@@ -21,4 +21,9 @@ def is_palindrome(str):
     else: is_palindrome(str[1:-1])
     return 'True'
 
-print(is_palindrome('토마토'))
+
+def main():
+    print(is_palindrome('토마토'))
+
+
+main()

@@ -10,6 +10,6 @@ print(Triangle(10,20))
 
 """
 def triangle(w, h):
-    return int((w*h)/2)
+    return int((w * h)/2)
 
 print(triangle(10,20))

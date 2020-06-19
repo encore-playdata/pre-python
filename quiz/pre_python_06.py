@@ -12,12 +12,12 @@
 """
 
 n = int(input('숫자를 입력하세요 : '))
-round = n*2+1
+round = n * 2 + 1 
 space = " "
 star = "*"
 
 for i in range(round):
-    if i < n: print(space*(n-i) + star*i)
+    if i < n: print(space * (n - i)  + star * )
     if i >= n: print(space * (i - n) + star * (round - i - 1))
 # i > 6
 # n = 5

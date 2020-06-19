@@ -25,6 +25,7 @@ card.print()
 
 import math
 
+
 class Card(object):
     def __init__(self):
         self._balance = 0
@@ -32,6 +33,7 @@ class Card(object):
     def charge(self, cost):
         self._balance += cost
         print('잔액이 {}원 입니다.'.format(self._balance))
+
     def check_dc(self, charge, used_for):
         if used_for == '영화관': return int(charge * 0.8)
         else: return int(charge * 1.0)
@@ -48,10 +50,13 @@ class Card(object):
         print('잔액이 {}원입니다'.format(self._balance))
 
 
+def main():
+    card = Card()
+    card.charge(20000)
+    card.consume(3000,'마트')
+    card.consume(10000,'영화관')
+    card.consume(13000,'마트')
+    card.print()
+    
 
-card = Card()
-card.charge(20000)
-card.consume(3000,'마트')
-card.consume(10000,'영화관')
-card.consume(13000,'마트')
-card.print()
+main()

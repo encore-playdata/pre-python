@@ -15,15 +15,20 @@ def bublle_sort(l):
     loop_count = 0
     print(l)
     s_flg = False # flag for sawp
-    for _ in range(len(l)-1):
+    for _ in range(len(l) - 1):
         # 모든 인덱스에 대해 실행
-        for j in range(len(l)-1):
+        for j in range(len(l) - 1):
             # 내부 루프, 비교 스왑 -> 비교 스왑, 모든 원소 확인할 때까지
             if l[j] > l[j+1]:
-                l[j], l[j+1] = l[j+1], l[j]
+                l[j], l[j+1] = l[j + 1], l[j]
                 s_flg = True
         if s_flg == False: # when swap does not occur, escape
             break
     print(l, 'loop count : ', loop_count)
 
-bublle_sort([4,3,2,1,8,7,100,21,1500,1300,1200,5,10,11,16,21,6])
+
+def main():
+    bublle_sort([4,3,2,1,8,7,100,21,1500,1300,1200,5,10,11,16,21,6])
+
+
+main()

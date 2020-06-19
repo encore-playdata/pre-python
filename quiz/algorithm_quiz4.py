@@ -26,11 +26,12 @@ def greedy_dude():
             assert Exception(ZeroDivisionError)
         cnt = price // coins[i]
         price = price - ( coins[i] * cnt )
-
         if i < len(coins)-1 : print(f'{coins[i]}원 동전 : {cnt}개', end=', ')
         else: print(f'{coins[i]}원 동전 : {cnt}개')
 
+
 def main():
     greedy_dude()
+
 
 main()
