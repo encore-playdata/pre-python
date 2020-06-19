@@ -51,10 +51,11 @@ class Card(Discount):
         print('잔액이 {}원 입니다.'.format(self._balance))
 
 
-multi_card=Card()
-multi_card.charge(20000)
-multi_card.consume(5000,'마트')
-multi_card.consume(10000,'영화관')
-multi_card.consume(2000,'교통')
-multi_card.print()
+def main():
+    multi_card=Card()
+    multi_card.charge(20000)
+    multi_card.consume(5000,'마트')
+    multi_card.consume(10000,'영화관')
+    multi_card.consume(2000,'교통')
+    multi_card.print()
 

@@ -10,10 +10,12 @@ print(factorial(10))
 3628800
 '''
 
+
 def factorial(k):
     if k == 1:
         return 1
     return k*factorial(k-1)
+    
 
 def main():
     k = int(input('숫자 입력 : '))
