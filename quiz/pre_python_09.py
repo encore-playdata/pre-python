@@ -15,4 +15,13 @@ score : 88
 A
 
 """
+def cal_grade(grade = 0x46):
+    if grade < 21: return 'F'
+    elif grade > 20 and grade < 41: return 'D'
+    elif grade > 40 and grade < 61: return 'C'
+    elif grade > 40 and grade < 61: return 'B'
+    else: return 'A'
 
+
+grade = int(input('score : '))
+print(cal_grade(grade))

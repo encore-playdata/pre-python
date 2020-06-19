@@ -14,7 +14,7 @@ print(factorial(10))
 def factorial(k):
     if k == 1:
         return 1
-    return k*factorial(k-1)
+    return k * factorial(k - 1)
   
     
 def main():

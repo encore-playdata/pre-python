@@ -17,7 +17,7 @@ space = " "
 star = "*"
 
 for i in range(round):
-    if i < n: print(space * (n - i)  + star * )
+    if i < n: print(space * (n - i)  + star * i )
     if i >= n: print(space * (i - n) + star * (round - i - 1))
 # i > 6
 # n = 5

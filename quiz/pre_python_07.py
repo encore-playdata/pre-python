@@ -6,11 +6,12 @@
  45
 """
 
-def getFirstNum():
+def get_first_num():
     sum = 0
     for i in range(101):
         sum += i
         if sum >= 1000:
             return i
 
-print(getFirstNum())
+
+print(get_first_num())
