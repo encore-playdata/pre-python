@@ -15,15 +15,14 @@ True
 '''
 
 def is_palindrome(str):
-    print(str)
-    if str[0] != str[-1]: return 'False'
-    elif len(str) < 2: return 'False'
-    else: is_palindrome(str[1:-1])
-    return 'True'
+    if str[0] != str[-1]: return False
+    elif len(str) <= 1: return True
+    else: return is_palindrome(str[1:-1])
 
 
 def main():
-    print(is_palindrome('토마토'))
+    print(is_palindrome('토마토마토'))
+    print(is_palindrome('감자감자칩감자감'))
 
 
 main()
