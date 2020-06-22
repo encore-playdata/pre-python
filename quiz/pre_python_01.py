@@ -13,3 +13,11 @@
 ★★★★★
 ★★★★★
  """
+
+width = input('가로의 숫자를 입력하시오 : ')
+height = input('세로의 숫자를 입력하세요 : ')
+
+for i in range(int(height)):
+    for j in range(int(width)):
+        print('★', end='')
+    print()

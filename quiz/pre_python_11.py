@@ -7,3 +7,12 @@ print(gcd(12,6))
 <출력>
 6
 """
+
+def gcd(x,y):
+    if x < y:
+        (x,y) = (y,x)
+    while y !=0:
+        (x, y) = (y, x%y)
+    return x
+
+print(gcd(12,6))

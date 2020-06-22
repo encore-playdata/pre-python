@@ -27,3 +27,11 @@
 
 
 """
+
+line = int(input("숫자를 입력하세요 : "))
+
+for x in range(1, line, 1):
+    print((" " * ((line * 2 - 1 - x) // 2)) + ("★" * x))
+
+for y in range(line, 0, -1):
+    print((" " * ( (line * 2 - 1 - y) // 2 )) + "★" * y)
