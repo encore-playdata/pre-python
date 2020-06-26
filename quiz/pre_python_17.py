@@ -23,3 +23,6 @@
 2056
 2060
 """
+for worldcup in range(1988,2061):
+  if worldcup % 4 != 0: continue
+  print(worldcup)

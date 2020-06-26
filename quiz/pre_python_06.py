@@ -27,3 +27,10 @@
 
 
 """
+N = int(input('숫자를 입력하세요 :' ))
+#공백 -1, 별 +1
+
+for i in range(1, N+1):
+  print(' '*(N - (i-1)), '★'* i)
+for j in range(1, N+1):
+  print( ' '* j,'★'*(N - (j-1)))

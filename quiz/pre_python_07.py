@@ -5,3 +5,11 @@
 <출력>
  45
 """
+result = []
+temp = 1
+for i in range(1,101):
+  temp += i
+  if temp >= 1000:
+    break
+  result.append(temp)
+print(len(result)+1)

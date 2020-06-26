@@ -14,3 +14,10 @@ print(new_list)
 ['exit', 'hi', 'playdata', 'intro']
 
 """
+file = ['exit.py','hi.py','playdata.hwp','intro.jpg']
+file[0] = 'exit'
+file[1] = 'hi'
+file[2] = 'playdata'
+file[3] = 'intro'
+new_list = file
+print(new_list)

@@ -13,3 +13,8 @@
 ★★★★★
 ★★★★★
  """
+h = int(input('가로의 숫자를 입력하시오 :' ))
+v = int(input('세로의 숫자를 입력하시오 :' ))
+hs = '★' * h
+for i in range(v):
+  print(hs)

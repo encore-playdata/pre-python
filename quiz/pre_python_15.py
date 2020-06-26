@@ -8,3 +8,13 @@
 <출력>
 남자
 """
+regNumbers = input()
+regNumber = regNumbers.split('-')
+regNumber2 = regNumber[1:]
+regNumber3 = ''.join(regNumber2)
+if regNumber3[0] == '1':
+  print('남자')
+elif regNumber3[0] == '3':
+  print('남자')
+else:
+  print('여자')

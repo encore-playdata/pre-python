@@ -10,3 +10,23 @@ print(bubble_sort(list))
 
 <출력>
 [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 16, 21]'''
+
+def swap(temp,a,b):
+  temp2 = []
+  for i in temp:
+    if temp[a] in temp:
+      temp2 = temp[a]
+      temp[a] = temp[b]
+      temp[b] = temp2
+    return temp
+
+def bubble_sort(list):
+  for i in range(len(list)-1):
+    for j in range(len(list)-1):
+      if list[j]>list[j+1]:
+        swap(list,j,j+1)
+  return list
+
+list=[4,3,2,1,8,7,5,10,11,16,21,6]
+print(bubble_sort(list))
+

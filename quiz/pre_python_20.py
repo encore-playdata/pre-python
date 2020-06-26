@@ -12,3 +12,14 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+list3 = []
+for i in range(1,101):
+  if i == 3 or i == 6 or i == 9 or i%10 == 3 or i%10 == 6 or i%10 == 9:
+    list3.append('짝')
+  elif int(i/10) == 3 or int(i/10) == 6 or int(i/10) == 9:
+    list3.append('짝')
+  elif i % 5 == 0:
+    list3.append('아자')
+  else:
+    list3.append(i)
+print(' '.join(map(str, list3)))
