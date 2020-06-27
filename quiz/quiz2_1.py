@@ -13,3 +13,8 @@ print(is_palindrome("토마토"))
 False
 True
 '''
+a = input('문자열 입력 : ')
+if a == a[::-1]:
+    print(True)
+else:
+    print(False)

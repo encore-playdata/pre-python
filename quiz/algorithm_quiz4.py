@@ -17,3 +17,13 @@ print(greedy())
 동전의 종류 :  100 50 10
 100원 동전 10개, 50원 동전 1개, 10원 동전 0개
 '''
+
+amount = int(input('액수입력 : '))
+coins = list(map(int, input('동전의 종류 : ').split(' ')))
+coins.sort(reverse=True)
+sentence = []
+for coin in coins:
+    number = amount//coin
+    sentence.append('{}원 동전 {}개'.format(str(coin), str(number)))
+    amount -= coin*number
+print(', '.join(sentence))

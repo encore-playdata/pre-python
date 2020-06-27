@@ -19,3 +19,15 @@ HELLO
 입력 형식이 잘못되었습니다.
 
 """
+import re
+
+upper_pattern = re.compile(r'^[A-Z\d]+$')
+lower_pattern = re.compile(r'^[a-z\d]+$')
+
+inp = input('입력 : ')
+if re.match(upper_pattern, inp):
+    print(inp.lower())
+elif re.match(lower_pattern, inp):
+    print(inp.upper())
+else:
+    print('입력 형식이 잘못되었습니다.')

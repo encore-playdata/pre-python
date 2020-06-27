@@ -13,3 +13,9 @@
 ★★★★★
 ★★★★★
  """
+width = int(input('가로의 숫자를 입력하시오 : '))
+height = int(input('세로의 숫자를 입력하시오 : '))
+
+message = '★' * width
+for i in range(height):
+    print(message)

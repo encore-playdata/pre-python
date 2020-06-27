@@ -12,3 +12,13 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+i = 1
+start = ''
+while i<=100:
+    if i%5 == 0:
+        start += '아자  '
+    elif ('3' in str(i)) | ('6' in str(i)) | ('9' in str(i)):
+        start += '짝 '
+    else:
+        start += str(i)+'  '
+    i += 1

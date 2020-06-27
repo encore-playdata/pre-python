@@ -23,3 +23,41 @@ multi_card.print()
 교통에서 1800.0원을 사용했습니다.
 잔액이 5700.0원 입니다
 '''
+
+from quiz2_3 import Card
+
+
+class MovieCard(Card):
+    def consume(self, amount, place):
+        if self.money < amount:
+            print('잔액이 부족합니다.')
+        elif place == '영화관':
+            print('{}에서 {}원 사용했습니다.'.format(place, str(amount * 0.8)))
+            self.money -= amount * 0.8
+        else:
+            print('{}에서 {}원 사용했습니다.'.format(place, str(amount)))
+            self.money -= amount
+
+
+class MartCard(Card):
+    def consume(self, amount, place):
+        if self.money < amount:
+            print('잔액이 부족합니다.')
+        elif place == '마트':
+            print('{}에서 {}원 사용했습니다.'.format(place, str(amount * 0.9)))
+            self.money -= amount * 0.9
+        else:
+            print('{}에서 {}원 사용했습니다.'.format(place, str(amount)))
+            self.money -= amount
+
+
+class TransCard(Card):
+    def consume(self, amount, place):
+        if self.money < amount:
+            print('잔액이 부족합니다.')
+        elif place == '교통':
+            print('{}에서 {}원 사용했습니다.'.format(place, str(amount * 0.9)))
+            self.money -= amount * 0.9
+        else:
+            print('{}에서 {}원 사용했습니다.'.format(place, str(amount)))
+            self.money -= amount

@@ -9,3 +9,10 @@ print(factorial(5))
 <출력>
 120
   """
+def factorial(number):
+    if number == 1:
+        return 1
+    elif number > 1:
+        return number * factorial(number - 1)
+    else:
+        return '팩토리얼을 구할 수 없습니다.'
