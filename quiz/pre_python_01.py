@@ -13,3 +13,15 @@
 ★★★★★
 ★★★★★
  """
+x = int(input("가로의 숫자를 입력하시오: "))
+y = int(input("세로의 숫자를 입력하시오: "))
+
+star = []
+
+for i in range(x):
+    star.append('★')
+
+starString = ''.join(star)
+
+for i in range(y):
+    print(starString)

@@ -11,3 +11,18 @@
 첫 번째(두 번째) 참가자의 승리입니다. or 비겼습니다.
 
 """
+import random
+print('첫번째 참가자 엔터키를 눌러 주사위를 던져 주세요: ')
+input()
+x = random.choice(range(1,7))
+print(x)
+print('두번째 참가자 엔터키를 눌러 주사위를 던져 주세요 : ')
+input()
+y = random.choice(range(1,7))
+print(y)
+if x == y:
+    print('비겼습니다.')
+elif x > y:
+    print('첫번째 참가자의 승리입니다.')
+elif x < y:
+    print('두번째 참가자의 승리입니다.')
