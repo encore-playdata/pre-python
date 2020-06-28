@@ -10,3 +10,20 @@
 <출력>
 150
 """
+x = int(input("첫 번째 수를 입력하세요 : "))
+y = int(input("두 번째 수를 입력하세요 : "))
+
+s = input("어떤 연산을 하실 건가요? : ")
+
+if s == "+":
+    result = x + y
+elif s == "-":
+    result = x - y
+elif s == "*":
+    result = x * y
+elif s == "/":
+    result = x / y
+else:
+    print("연산 기호를 잘못입력하셨습니다.")
+
+print("연산 결과 값은 %d 입니다." % result)
