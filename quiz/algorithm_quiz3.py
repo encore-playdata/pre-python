@@ -10,3 +10,17 @@ print(bubble_sort(list))
 
 <출력>
 [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 16, 21]'''
+list=[4,3,2,1,8,7,5,10,11,16,21,6]
+def bubble_sort(list):
+    li = list
+    length = len(li)
+    for i in range(length):
+        for j in range(length-1):
+            if list[j] > list[j+1]:
+                temp = li[j]
+                li[j] = li[j+1]
+                li[j+1] = temp
+
+    return li
+
+print(bubble_sort(list))

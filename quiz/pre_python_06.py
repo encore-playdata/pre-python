@@ -27,3 +27,17 @@
 
 
 """
+n = int(input('숫자를 입력하세요. : '))
+for i in range(n * 2 - 1):
+    if(i < n):
+        for j in range(i, n-1):
+            print(end=' ')
+        for k in range(i+1):
+            print('★', end='')
+    else:
+        for b in range(n, i+1):
+            print(end=' ')
+        for a in range(i, n *2 -1):
+            print('★', end='')
+    print()
+

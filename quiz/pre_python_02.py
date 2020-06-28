@@ -10,3 +10,18 @@
 <출력>
 150
 """
+
+n = int(input("첫 번째 수를 입력하세요 : "))
+m = int(input("두 번째 수를 입력하세요 : "))
+k = input("어떤 연산을 하실 건가요?")
+
+if k == '+' :
+    print(n + m)
+elif k == '-' :
+    print(n - m)
+elif k == '*' :
+    print(n*m)
+elif k == '/' :
+    print(n / m)
+else :
+    print("-1")

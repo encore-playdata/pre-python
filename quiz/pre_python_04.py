@@ -9,3 +9,10 @@ print(Triangle(10,20))
 100
 
 """
+def Triangle(n,m):
+    return n * m / 2
+
+n = int(input("length : "))
+m = int(input("height : "))
+
+print(Triangle(n,m))

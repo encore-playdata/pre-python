@@ -8,3 +8,11 @@
 <출력>
 남자
 """
+n,m = input('주민등록번호 : ').split('-')
+print(n)
+print(m)
+if m[0] == 0 or m[0] == 2:
+    print('여성')
+elif m[0] == 1 or m[0] == 3:
+    print('남성')
+

@@ -12,3 +12,18 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+
+for i in range(1, 101):
+    if i < 10:
+        if i == 3 or i == 6 or i == 9:
+            print('짝', end=' ')
+        elif i % 5 == 0:
+            print('아자', end=' ')
+    if i < 101:
+        if i%10 == 3 or i%10 == 6 or i%10 == 9:
+            print('짝', end=' ')
+        elif i%100 == 3 or i%100 == 6 or i%100 == 9:
+            print('짝', end=' ')
+        elif i % 5 == 0:
+            print('아자', end=' ')
+
