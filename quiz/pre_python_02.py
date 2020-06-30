@@ -10,3 +10,18 @@
 <출력>
 150
 """
+
+first_number = input('첫 번째 수를 입력하세요 : ')
+second_number = input('두 번째 수를 입력하세요 : ')
+oper = input('어떤 연산을 하실 건가요? : ')
+
+if oper == '+':
+    result = int(first_number) + int(second_number)
+elif oper == '-':
+    result = int(first_number) - int(second_number)
+elif oper == '*':
+    result = int(first_number) * int(second_number)
+elif oper == '/':
+    result = int(first_number) / int(second_number)
+
+print(result)

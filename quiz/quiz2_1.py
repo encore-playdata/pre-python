@@ -13,3 +13,13 @@ print(is_palindrome("토마토"))
 False
 True
 '''
+
+word = input()
+
+pal = True
+for i in range(len(word) // 2):
+    if word[i] != word[-i-1]:
+        pal = False
+        break
+
+print(pal)

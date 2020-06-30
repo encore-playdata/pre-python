@@ -13,3 +13,11 @@
 ★★★★★
 ★★★★★
  """
+
+row = input('가로의 숫자를 입력하시오 : ')
+column = input('가로의 숫자를 입력하시오 : ')
+
+for i in range(0, int(column)):
+    for j in range(0, int(row)):
+        print('★', end='')
+    print(end='\n')
