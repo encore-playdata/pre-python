@@ -13,3 +13,16 @@ print(is_palindrome("토마토"))
 False
 True
 '''
+
+re = []
+re = []
+def is_palindrome(re):
+    if re[0] == re[-1]:
+        a = "TRUE"
+        return a
+    else:
+        a = "FALSE"
+        return a
+
+print(is_palindrome("radio"))
+print(is_palindrome("토마토"))
