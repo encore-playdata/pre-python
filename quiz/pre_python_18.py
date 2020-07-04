@@ -14,3 +14,10 @@ print(new_list)
 ['exit', 'hi', 'playdata', 'intro']
 
 """
+import os
+new_list=[]
+file = ['exit.py','hi.py','playdata.hwp','intro.jpg']
+for i in file:
+    s=os.path.splitext(i)
+    new_list.append(s[0])
+print(new_list)

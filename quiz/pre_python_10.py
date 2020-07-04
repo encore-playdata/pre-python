@@ -9,3 +9,8 @@ print(factorial(5))
 <출력>
 120
   """
+def factorial(n):
+  for i in range(1,n):
+    n*=i
+  return n
+print(factorial(5))

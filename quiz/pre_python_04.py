@@ -9,3 +9,9 @@ print(Triangle(10,20))
 100
 
 """
+def Triangle(a,b):
+    return (a*b/2)
+
+a=int(input('삼각형 가로 입력 :'))
+b=int(input('삼각형 높이 입력 :'))
+print(f'{Triangle(a,b):.0f}')
