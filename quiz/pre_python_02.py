@@ -10,3 +10,22 @@
 <출력>
 150
 """
+
+a = int(input("첫 번째 수를 입력하세요 : "))
+b = int(input("두 번째 수를 입력하세요 : "))
+operator = input("어떤 연산을 하실 건가요? : ")
+
+if operator == '+':
+    print(a + b)
+elif operator == '-':
+    print(a - b)
+elif operator == '*':
+    print(a * b)
+elif operator == '/':
+    print(a / b)
+elif operator == '//':
+    print(a // b)
+elif operator == '%':
+    print(a % b)
+else:
+    print("지원하지 않는 연산자입니다.")

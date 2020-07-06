@@ -19,3 +19,22 @@ HELLO
 입력 형식이 잘못되었습니다.
 
 """
+
+word = input("영어단어를 입력하세요 : ")
+
+english = True
+word = list(word)
+for i, letter in enumerate(word):
+    if letter.islower():
+        word[i] = letter.upper()
+    elif letter.isupper():
+        word[i] = letter.lower()
+    else:
+        english = False
+        break
+word = "".join(word)
+
+if english:
+    print(word)
+else:
+    print("입력 형식이 잘못되었습니다.")

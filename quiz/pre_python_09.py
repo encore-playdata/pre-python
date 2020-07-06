@@ -15,3 +15,20 @@ score : 88
 A
 
 """
+
+while True:
+    score = int(input("score : "))
+    if 0 <= score <= 100:
+        break
+    print("점수는 0점부터 100점까지 입니다.")
+
+if 81 <= score:
+    print('A')
+elif 61 <= score:
+    print('B')
+elif 41 <= score:
+    print('C')
+elif 21 <= score:
+    print('D')
+else:
+    print('F')

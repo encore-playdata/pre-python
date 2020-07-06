@@ -5,3 +5,12 @@
 <출력>
  45
 """
+
+total = 0
+for i in range(1, 101):
+    total += i
+    if 1000 < total:
+        answer = i
+        break
+
+print(answer)

@@ -1,4 +1,4 @@
-'''
+"""
 4.
 탐욕 알고리즘은 최적해를 구하는 상황에서 사용하는 방법입니다.
 여러 경우 중 하나를 선택할 때 그것이 그상황에서 가장 좋다고 생각하는 것을
@@ -10,10 +10,28 @@
 (input 으로 액수와 동전의 종류를 입력하게 구현)
 
 <입력>
-print(greedy())
-
-<출력>
 액수입력 :  1050
 동전의 종류 :  100 50 10
+
+<출력>
+print(greedy())
 100원 동전 10개, 50원 동전 1개, 10원 동전 0개
-'''
+"""
+
+
+def greedy(amount, coins):
+    info_lst = []
+
+    for coin in coins:
+        count = amount // coin
+        info_lst.append(f"{coin}원 동전 {count}개")
+
+        amount %= coin
+
+    return ", ".join(info_lst)
+
+
+amount_of_money = int(input("액수입력 : "))
+kind_of_coins = sorted(list(map(int, input("동전의 종류 : ").split())), reverse=True)
+
+print(greedy(amount_of_money, kind_of_coins))

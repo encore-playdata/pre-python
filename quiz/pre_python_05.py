@@ -16,3 +16,8 @@
 5 * 9 = 45
 
 """
+
+n_times_table = int(input("출력할 단을 입력해주세요 : "))
+
+for i in range(1, 10):
+    print("{} * {} = {}".format(n_times_table, i, n_times_table * i))

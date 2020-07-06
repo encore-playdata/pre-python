@@ -8,3 +8,14 @@
 <출력>
 남자
 """
+
+# rrn (Resident Registration Number)
+rrn = input("주민등록번호 : ")
+
+second_numbers = rrn.split('-')[1]
+gender_info = int(second_numbers[:1])
+
+if gender_info % 2 == 0:
+    print('여자')
+else:
+    print('남자')
