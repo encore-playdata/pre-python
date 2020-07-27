@@ -13,3 +13,9 @@ print(is_palindrome("토마토"))
 False
 True
 '''
+
+def is_palindrome(text):
+    return text == text[::-1]
+
+print(is_palindrome("radio"))
+print(is_palindrome("토마토"))

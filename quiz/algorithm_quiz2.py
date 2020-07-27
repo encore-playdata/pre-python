@@ -14,3 +14,18 @@ print(select_sort(list))
 [1, 2, 3, 6, 7, 8, 10, 21]
 
 '''
+
+
+def select_sort(a):
+    n = len(a)
+    for i in range(0, n - 1):
+        min_num = i
+        for j in range(i + 1, n):
+            if a[j] < a[min_num]:
+                min_num = j
+        a[i], a[min_num] = a[min_num], a[i]
+
+
+list = [6, 2, 3, 7, 8, 10, 21, 1]
+select_sort(list)
+print(list)

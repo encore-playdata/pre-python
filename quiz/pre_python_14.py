@@ -19,3 +19,12 @@ HELLO
 입력 형식이 잘못되었습니다.
 
 """
+
+input_english = input("대문자 혹은 소문자 영어를 입력하시오. : ")
+
+if input_english.isupper() == True:
+    print(input_english.lower())
+elif input_english.islower() == True:
+    print(input_english.upper())
+else:
+    print("입력 형식이 잘못되었습니다")

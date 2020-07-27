@@ -8,3 +8,11 @@ print(factorial(10))
 
 <출력>
 3628800'''
+
+def factorial(n):
+    fact = 1
+    for i in range(1, n+1):
+        fact *= i
+    return fact
+
+print(factorial(10))

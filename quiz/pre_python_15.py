@@ -8,3 +8,11 @@
 <출력>
 남자
 """
+
+identity_number = input("주민등록번호 : ")
+
+if identity_number[7] == "1" or identity_number[7] == "3":
+    print("남자")
+
+elif identity_number[7] == "2" or identity_number[7] == "4":
+    print("여자")

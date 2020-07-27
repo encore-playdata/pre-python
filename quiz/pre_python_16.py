@@ -6,3 +6,11 @@
 3  6  9  12  15  18  21  24  27  30  33  36  39  42  45  48  
 
 """
+
+three_num = 3
+
+for i in range (1,51):
+    if three_num < 50:
+        print(three_num," ", end="")
+        three_num += 3
+

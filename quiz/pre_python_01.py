@@ -13,3 +13,10 @@
 ★★★★★
 ★★★★★
  """
+
+garo=int(input("가로의 숫자를 입력하시오 : "))
+sero=int(input("세로의 숫자를 입력하시오 : "))
+star="★"
+enter="\n"
+
+print((star*garo+enter)*sero)

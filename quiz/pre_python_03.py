@@ -11,3 +11,26 @@
 첫 번째(두 번째) 참가자의 승리입니다. or 비겼습니다.
 
 """
+
+from random import randrange
+
+enter = ""
+
+first_input = input("첫번째 참가자 엔터키를 눌러 주사위를 던져 주세요 : 1~6 랜덤숫자 출력")  # or raw_input in python2
+
+if enter == "":
+    first = randrange(1, 7)
+    print("첫번째 참가자의 주사위 숫자는 >>", first)
+
+sec_input = input("두번째 참가자 엔터키를 눌러 주사위를 던져 주세요 : 1~6 랜덤숫자 출력")  # or raw_input in python2
+if enter == "":
+    sec = randrange(1, 7)
+    print("두번째 참가자의 주사위 숫자는 >>", sec)
+if first > sec:
+    print("첫 번째 참가자의 승리입니다.")
+elif first < sec:
+    print("두 번째 참가자의 승리입니다.")
+else:
+    print("비겼습니다.")
+
+
